@@ -12,12 +12,12 @@ ${Save}                                Salvar
 
 **** Keywords ****
 Abrir navegador
-  Start Video Recording
+  Start Gif Recording
   Open Browser        ${URL}           ${BROWSER} 
 
 Fechar navegador
   Capture Page Screenshot
-  Stop Video Recording
+  Stop Gif Recording
   Close Browser
   
 

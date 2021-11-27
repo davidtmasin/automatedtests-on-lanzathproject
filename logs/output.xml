@@ -1,392 +1,382 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211127 14:06:04.544" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211127 14:20:06.617" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="D:\www\TestesAutomatizados\Testing-LanzaWebSite\tests">
 <suite id="s1-s1" name="Homepage" source="D:\www\TestesAutomatizados\Testing-LanzaWebSite\tests\homepage.robot">
 <test id="s1-s1-t1" name="Verificar se a página inicial é acessível">
 <kw name="Abrir navegador" library="base" type="SETUP">
-<kw name="Start Video Recording" library="ScreenCapLibrary">
-<doc>Starts the recording of a video in the background with the specified ``name``.
-The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
-<msg timestamp="20211127 14:06:10.254" level="INFO">Automatically setting a fps of 4.0</msg>
-<status status="PASS" starttime="20211127 14:06:07.942" endtime="20211127 14:06:10.258"/>
+<kw name="Start Gif Recording" library="ScreenCapLibrary">
+<doc>Starts the recording of a GIF in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Gif Recording` keyword.</doc>
+<status status="PASS" starttime="20211127 14:20:08.194" endtime="20211127 14:20:08.198"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211127 14:06:10.260" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
-<status status="PASS" starttime="20211127 14:06:10.258" endtime="20211127 14:06:16.067"/>
+<msg timestamp="20211127 14:20:08.199" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
+<status status="PASS" starttime="20211127 14:20:08.199" endtime="20211127 14:20:13.327"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:07.941" endtime="20211127 14:06:16.067"/>
+<status status="PASS" starttime="20211127 14:20:08.193" endtime="20211127 14:20:13.328"/>
 </kw>
 <kw name="Acessar a página home do site" library="base">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>To-Do React App</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211127 14:06:16.088" level="INFO">Page title is 'To-Do React App'.</msg>
-<status status="PASS" starttime="20211127 14:06:16.070" endtime="20211127 14:06:16.088"/>
+<msg timestamp="20211127 14:20:13.380" level="INFO">Page title is 'To-Do React App'.</msg>
+<status status="PASS" starttime="20211127 14:20:13.333" endtime="20211127 14:20:13.380"/>
 </kw>
 <kw name="Page Should Contain Link" library="SeleniumLibrary">
 <arg>xpath=//a[contains(.,"My Todos")]</arg>
 <doc>Verifies link identified by ``locator`` is found from current page.</doc>
-<msg timestamp="20211127 14:06:16.168" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
-<status status="PASS" starttime="20211127 14:06:16.090" endtime="20211127 14:06:16.168"/>
+<msg timestamp="20211127 14:20:13.447" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
+<status status="PASS" starttime="20211127 14:20:13.381" endtime="20211127 14:20:13.448"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//caption</arg>
 <arg>Lista de Tarefas</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20211127 14:06:16.170" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
-<status status="PASS" starttime="20211127 14:06:16.169" endtime="20211127 14:06:16.374"/>
+<msg timestamp="20211127 14:20:13.451" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
+<status status="PASS" starttime="20211127 14:20:13.448" endtime="20211127 14:20:13.547"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211127 14:06:18.390" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211127 14:06:16.377" endtime="20211127 14:06:18.391"/>
+<msg timestamp="20211127 14:20:15.561" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 14:20:13.547" endtime="20211127 14:20:15.565"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:16.069" endtime="20211127 14:06:18.392"/>
+<status status="PASS" starttime="20211127 14:20:13.330" endtime="20211127 14:20:15.565"/>
 </kw>
 <kw name="Fechar navegador" library="base" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211127 14:06:18.824" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211127 14:06:18.395" endtime="20211127 14:06:18.826"/>
+<msg timestamp="20211127 14:20:15.789" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 14:20:15.572" endtime="20211127 14:20:15.789"/>
 </kw>
-<kw name="Stop Video Recording" library="ScreenCapLibrary">
-<doc>Stops the video recording corresponding to the given ``alias`` and generates the file in WebM format. If no
-``alias`` is specified, the last opened recording will be closed. If there are more recordings with the same
-alias all of them will be closed. If ``embed`` argument was set to
-``True`` the video will be displayed in the log file.</doc>
-<msg timestamp="20211127 14:06:19.115" level="INFO" html="true">&lt;a href="recording_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211127 14:06:18.826" endtime="20211127 14:06:19.115"/>
+<kw name="Stop Gif Recording" library="ScreenCapLibrary">
+<doc>Stops the GIF recording and generates the file. If ``embed`` argument was set to ``True`` the
+GIF will be displayed in the log file.</doc>
+<msg timestamp="20211127 14:20:15.896" level="INFO" html="true">&lt;a href="screenshot_1.gif"&gt;&lt;img src="screenshot_1.gif" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 14:20:15.789" endtime="20211127 14:20:16.450"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211127 14:06:19.115" endtime="20211127 14:06:23.231"/>
+<status status="PASS" starttime="20211127 14:20:16.450" endtime="20211127 14:20:19.255"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:18.394" endtime="20211127 14:06:23.231"/>
+<status status="PASS" starttime="20211127 14:20:15.571" endtime="20211127 14:20:19.255"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:07.939" endtime="20211127 14:06:23.246"/>
+<status status="PASS" starttime="20211127 14:20:08.185" endtime="20211127 14:20:19.256"/>
 </test>
-<status status="PASS" starttime="20211127 14:06:04.633" endtime="20211127 14:06:23.281"/>
+<status status="PASS" starttime="20211127 14:20:06.704" endtime="20211127 14:20:19.263"/>
 </suite>
 <suite id="s1-s2" name="Newtask" source="D:\www\TestesAutomatizados\Testing-LanzaWebSite\tests\newtask.robot">
 <test id="s1-s2-t1" name="Criar uma nova tarefa">
 <kw name="Abrir navegador" library="base" type="SETUP">
-<kw name="Start Video Recording" library="ScreenCapLibrary">
-<doc>Starts the recording of a video in the background with the specified ``name``.
-The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
-<msg timestamp="20211127 14:06:25.842" level="INFO">Automatically setting a fps of 2.5</msg>
-<status status="PASS" starttime="20211127 14:06:23.318" endtime="20211127 14:06:25.850"/>
+<kw name="Start Gif Recording" library="ScreenCapLibrary">
+<doc>Starts the recording of a GIF in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Gif Recording` keyword.</doc>
+<status status="PASS" starttime="20211127 14:20:19.293" endtime="20211127 14:20:19.299"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211127 14:06:25.851" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
-<status status="PASS" starttime="20211127 14:06:25.850" endtime="20211127 14:06:30.473"/>
+<msg timestamp="20211127 14:20:19.303" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
+<status status="PASS" starttime="20211127 14:20:19.300" endtime="20211127 14:20:23.916"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:23.311" endtime="20211127 14:06:30.474"/>
+<status status="PASS" starttime="20211127 14:20:19.292" endtime="20211127 14:20:23.917"/>
 </kw>
 <kw name="Acessar a página home do site" library="base">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>To-Do React App</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211127 14:06:30.520" level="INFO">Page title is 'To-Do React App'.</msg>
-<status status="PASS" starttime="20211127 14:06:30.490" endtime="20211127 14:06:30.521"/>
+<msg timestamp="20211127 14:20:23.970" level="INFO">Page title is 'To-Do React App'.</msg>
+<status status="PASS" starttime="20211127 14:20:23.934" endtime="20211127 14:20:23.970"/>
 </kw>
 <kw name="Page Should Contain Link" library="SeleniumLibrary">
 <arg>xpath=//a[contains(.,"My Todos")]</arg>
 <doc>Verifies link identified by ``locator`` is found from current page.</doc>
-<msg timestamp="20211127 14:06:30.583" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
-<status status="PASS" starttime="20211127 14:06:30.521" endtime="20211127 14:06:30.583"/>
+<msg timestamp="20211127 14:20:24.008" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
+<status status="PASS" starttime="20211127 14:20:23.971" endtime="20211127 14:20:24.009"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//caption</arg>
 <arg>Lista de Tarefas</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20211127 14:06:30.584" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
-<status status="PASS" starttime="20211127 14:06:30.583" endtime="20211127 14:06:30.834"/>
+<msg timestamp="20211127 14:20:24.010" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
+<status status="PASS" starttime="20211127 14:20:24.009" endtime="20211127 14:20:24.074"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211127 14:06:32.848" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211127 14:06:30.834" endtime="20211127 14:06:32.848"/>
+<msg timestamp="20211127 14:20:26.075" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 14:20:24.075" endtime="20211127 14:20:26.076"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:30.488" endtime="20211127 14:06:32.849"/>
+<status status="PASS" starttime="20211127 14:20:23.934" endtime="20211127 14:20:26.076"/>
 </kw>
 <kw name="Clicar no botão de mais" library="base">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=span &gt; svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 14:06:32.851" endtime="20211127 14:06:32.965"/>
+<status status="PASS" starttime="20211127 14:20:26.080" endtime="20211127 14:20:26.176"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="uk-icon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:06:32.965" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
-<status status="PASS" starttime="20211127 14:06:32.965" endtime="20211127 14:06:33.184"/>
+<msg timestamp="20211127 14:20:26.177" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 14:20:26.176" endtime="20211127 14:20:26.377"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211127 14:06:35.200" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211127 14:06:33.185" endtime="20211127 14:06:35.201"/>
+<msg timestamp="20211127 14:20:28.387" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 14:20:26.378" endtime="20211127 14:20:28.387"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:32.850" endtime="20211127 14:06:35.202"/>
+<status status="PASS" starttime="20211127 14:20:26.078" endtime="20211127 14:20:28.388"/>
 </kw>
 <kw name="Digitar &quot;Estudar automatização de testes&quot; na caixa &quot;Nova tarefa...&quot;" library="base" sourcename="Digitar &quot;${NewTask}&quot; na caixa &quot;${PlaceholderTask}&quot;">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder="${PlaceholderTask}"]</arg>
 <arg>${NewTask}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211127 14:06:35.216" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
-<status status="PASS" starttime="20211127 14:06:35.215" endtime="20211127 14:06:35.713"/>
+<msg timestamp="20211127 14:20:28.394" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 14:20:28.393" endtime="20211127 14:20:28.956"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211127 14:06:37.727" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211127 14:06:35.714" endtime="20211127 14:06:37.727"/>
+<msg timestamp="20211127 14:20:30.968" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 14:20:28.956" endtime="20211127 14:20:30.969"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:35.213" endtime="20211127 14:06:37.728"/>
+<status status="PASS" starttime="20211127 14:20:28.391" endtime="20211127 14:20:30.969"/>
 </kw>
 <kw name="Clicar no botão &quot;Salvar&quot;" library="base" sourcename="Clicar no botão &quot;${SaveBTN}&quot;">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,"${SaveBTN}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:06:37.741" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
-<status status="PASS" starttime="20211127 14:06:37.730" endtime="20211127 14:06:38.115"/>
+<msg timestamp="20211127 14:20:30.977" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 14:20:30.976" endtime="20211127 14:20:31.254"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:37.729" endtime="20211127 14:06:38.116"/>
+<status status="PASS" starttime="20211127 14:20:30.975" endtime="20211127 14:20:31.254"/>
 </kw>
 <kw name="Verificar se a nova tarefa está visível" library="base">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//td[contains(.,"${Task}")]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 14:06:38.122" endtime="20211127 14:06:38.304"/>
+<status status="PASS" starttime="20211127 14:20:31.256" endtime="20211127 14:20:31.392"/>
 </kw>
 <kw name="Table Row Should Contain" library="SeleniumLibrary">
 <arg>xpath=//table[@class="uk-table"]</arg>
 <arg>2</arg>
 <arg>${Task}</arg>
 <doc>Verifies that table row contains text ``expected``.</doc>
-<status status="PASS" starttime="20211127 14:06:38.305" endtime="20211127 14:06:38.624"/>
+<status status="PASS" starttime="20211127 14:20:31.392" endtime="20211127 14:20:31.575"/>
 </kw>
 <kw name="Get WebElement" library="SeleniumLibrary">
 <var>${target}</var>
 <arg>//td[contains(.,"${Task}")]</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20211127 14:06:38.642" level="INFO">${target} = &lt;selenium.webdriver.remote.webelement.WebElement (session="b86769a5c967da073b6f6e213436c12c", element="92125841-e965-4200-9250-be370dd587ad")&gt;</msg>
-<status status="PASS" starttime="20211127 14:06:38.625" endtime="20211127 14:06:38.642"/>
+<msg timestamp="20211127 14:20:31.592" level="INFO">${target} = &lt;selenium.webdriver.remote.webelement.WebElement (session="6b2248c09dcd601dcc0eb6f05f4150dd", element="cf4906b9-b6d1-427c-b290-99da7b852227")&gt;</msg>
+<status status="PASS" starttime="20211127 14:20:31.575" endtime="20211127 14:20:31.592"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${target.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211127 14:06:38.643" endtime="20211127 14:06:38.675"/>
+<status status="PASS" starttime="20211127 14:20:31.592" endtime="20211127 14:20:31.668"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${target.text}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211127 14:06:38.725" level="INFO">Estudar automatização de testes</msg>
-<status status="PASS" starttime="20211127 14:06:38.676" endtime="20211127 14:06:38.726"/>
+<msg timestamp="20211127 14:20:31.704" level="INFO">Estudar automatização de testes</msg>
+<status status="PASS" starttime="20211127 14:20:31.669" endtime="20211127 14:20:31.704"/>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <arg>${target.text}</arg>
 <arg>${Task}</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20211127 14:06:38.726" endtime="20211127 14:06:38.756"/>
+<status status="PASS" starttime="20211127 14:20:31.704" endtime="20211127 14:20:31.724"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211127 14:06:40.768" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211127 14:06:38.757" endtime="20211127 14:06:40.768"/>
+<msg timestamp="20211127 14:20:33.742" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 14:20:31.724" endtime="20211127 14:20:33.742"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:38.121" endtime="20211127 14:06:40.769"/>
+<status status="PASS" starttime="20211127 14:20:31.255" endtime="20211127 14:20:33.743"/>
 </kw>
 <kw name="Fechar navegador" library="base" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211127 14:06:40.936" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211127 14:06:40.771" endtime="20211127 14:06:40.937"/>
+<msg timestamp="20211127 14:20:33.939" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 14:20:33.751" endtime="20211127 14:20:33.939"/>
 </kw>
-<kw name="Stop Video Recording" library="ScreenCapLibrary">
-<doc>Stops the video recording corresponding to the given ``alias`` and generates the file in WebM format. If no
-``alias`` is specified, the last opened recording will be closed. If there are more recordings with the same
-alias all of them will be closed. If ``embed`` argument was set to
-``True`` the video will be displayed in the log file.</doc>
-<msg timestamp="20211127 14:06:41.125" level="INFO" html="true">&lt;a href="recording_2.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_2.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211127 14:06:40.937" endtime="20211127 14:06:41.126"/>
+<kw name="Stop Gif Recording" library="ScreenCapLibrary">
+<doc>Stops the GIF recording and generates the file. If ``embed`` argument was set to ``True`` the
+GIF will be displayed in the log file.</doc>
+<msg timestamp="20211127 14:20:34.052" level="INFO" html="true">&lt;a href="screenshot_2.gif"&gt;&lt;img src="screenshot_2.gif" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 14:20:33.940" endtime="20211127 14:20:35.548"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211127 14:06:41.126" endtime="20211127 14:06:46.190"/>
+<status status="PASS" starttime="20211127 14:20:35.549" endtime="20211127 14:20:39.095"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:40.770" endtime="20211127 14:06:46.191"/>
+<status status="PASS" starttime="20211127 14:20:33.750" endtime="20211127 14:20:39.095"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:23.309" endtime="20211127 14:06:46.193"/>
+<status status="PASS" starttime="20211127 14:20:19.290" endtime="20211127 14:20:39.096"/>
 </test>
 <test id="s1-s2-t2" name="Criar uma nova tarefa sem informar o nome da tarefa">
 <kw name="Abrir navegador" library="base" type="SETUP">
-<kw name="Start Video Recording" library="ScreenCapLibrary">
-<doc>Starts the recording of a video in the background with the specified ``name``.
-The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
-<msg timestamp="20211127 14:06:50.844" level="INFO">Automatically setting a fps of 2.0</msg>
-<status status="PASS" starttime="20211127 14:06:46.198" endtime="20211127 14:06:50.848"/>
+<kw name="Start Gif Recording" library="ScreenCapLibrary">
+<doc>Starts the recording of a GIF in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Gif Recording` keyword.</doc>
+<status status="PASS" starttime="20211127 14:20:39.102" endtime="20211127 14:20:39.107"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211127 14:06:50.849" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
-<status status="PASS" starttime="20211127 14:06:50.848" endtime="20211127 14:06:56.662"/>
+<msg timestamp="20211127 14:20:39.108" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
+<status status="PASS" starttime="20211127 14:20:39.107" endtime="20211127 14:20:44.910"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:46.198" endtime="20211127 14:06:56.663"/>
+<status status="PASS" starttime="20211127 14:20:39.100" endtime="20211127 14:20:44.910"/>
 </kw>
 <kw name="Acessar a página home do site" library="base">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>To-Do React App</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211127 14:06:56.697" level="INFO">Page title is 'To-Do React App'.</msg>
-<status status="PASS" starttime="20211127 14:06:56.670" endtime="20211127 14:06:56.698"/>
+<msg timestamp="20211127 14:20:44.935" level="INFO">Page title is 'To-Do React App'.</msg>
+<status status="PASS" starttime="20211127 14:20:44.917" endtime="20211127 14:20:44.935"/>
 </kw>
 <kw name="Page Should Contain Link" library="SeleniumLibrary">
 <arg>xpath=//a[contains(.,"My Todos")]</arg>
 <doc>Verifies link identified by ``locator`` is found from current page.</doc>
-<msg timestamp="20211127 14:06:56.730" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
-<status status="PASS" starttime="20211127 14:06:56.698" endtime="20211127 14:06:56.731"/>
+<msg timestamp="20211127 14:20:44.988" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
+<status status="PASS" starttime="20211127 14:20:44.935" endtime="20211127 14:20:44.989"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//caption</arg>
 <arg>Lista de Tarefas</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20211127 14:06:56.732" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
-<status status="PASS" starttime="20211127 14:06:56.731" endtime="20211127 14:06:56.789"/>
+<msg timestamp="20211127 14:20:44.990" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
+<status status="PASS" starttime="20211127 14:20:44.989" endtime="20211127 14:20:45.091"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211127 14:06:58.804" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211127 14:06:56.790" endtime="20211127 14:06:58.804"/>
+<msg timestamp="20211127 14:20:47.102" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 14:20:45.092" endtime="20211127 14:20:47.103"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:56.669" endtime="20211127 14:06:58.804"/>
+<status status="PASS" starttime="20211127 14:20:44.916" endtime="20211127 14:20:47.104"/>
 </kw>
 <kw name="Clicar no botão de mais" library="base">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=span &gt; svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 14:06:58.817" endtime="20211127 14:06:58.902"/>
+<status status="PASS" starttime="20211127 14:20:47.118" endtime="20211127 14:20:47.202"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="uk-icon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:06:58.903" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
-<status status="PASS" starttime="20211127 14:06:58.903" endtime="20211127 14:06:59.195"/>
+<msg timestamp="20211127 14:20:47.203" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 14:20:47.202" endtime="20211127 14:20:47.455"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211127 14:07:01.211" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211127 14:06:59.195" endtime="20211127 14:07:01.212"/>
+<msg timestamp="20211127 14:20:49.466" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 14:20:47.455" endtime="20211127 14:20:49.466"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:58.816" endtime="20211127 14:07:01.213"/>
+<status status="PASS" starttime="20211127 14:20:47.117" endtime="20211127 14:20:49.467"/>
 </kw>
 <kw name="Clicar no botão &quot;Salvar&quot;" library="base" sourcename="Clicar no botão &quot;${SaveBTN}&quot;">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,"${SaveBTN}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:01.218" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
-<status status="PASS" starttime="20211127 14:07:01.218" endtime="20211127 14:07:01.349"/>
+<msg timestamp="20211127 14:20:49.471" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 14:20:49.470" endtime="20211127 14:20:49.725"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:01.217" endtime="20211127 14:07:01.349"/>
+<status status="PASS" starttime="20211127 14:20:49.468" endtime="20211127 14:20:49.725"/>
 </kw>
 <kw name="Verificar se a mensagem de erro &quot;Tarefa inválida&quot; aparece" library="base" sourcename="Verificar se a mensagem de erro &quot;${MsgError}&quot; aparece">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${InvalidTask}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 14:07:01.351" endtime="20211127 14:07:01.469"/>
+<status status="PASS" starttime="20211127 14:20:49.730" endtime="20211127 14:20:49.829"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${InvalidTask}</arg>
 <arg>${MsgError}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20211127 14:07:01.470" level="INFO">Verifying element 'xpath=//small/strong[contains(.,"Tarefa inválida")]' contains exact text 'Tarefa inválida'.</msg>
-<status status="PASS" starttime="20211127 14:07:01.469" endtime="20211127 14:07:01.563"/>
+<msg timestamp="20211127 14:20:49.830" level="INFO">Verifying element 'xpath=//small/strong[contains(.,"Tarefa inválida")]' contains exact text 'Tarefa inválida'.</msg>
+<status status="PASS" starttime="20211127 14:20:49.829" endtime="20211127 14:20:49.898"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:01.350" endtime="20211127 14:07:01.563"/>
+<status status="PASS" starttime="20211127 14:20:49.728" endtime="20211127 14:20:49.899"/>
 </kw>
 <kw name="Fechar navegador" library="base" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211127 14:07:01.735" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211127 14:07:01.577" endtime="20211127 14:07:01.736"/>
+<msg timestamp="20211127 14:20:50.164" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 14:20:49.901" endtime="20211127 14:20:50.165"/>
 </kw>
-<kw name="Stop Video Recording" library="ScreenCapLibrary">
-<doc>Stops the video recording corresponding to the given ``alias`` and generates the file in WebM format. If no
-``alias`` is specified, the last opened recording will be closed. If there are more recordings with the same
-alias all of them will be closed. If ``embed`` argument was set to
-``True`` the video will be displayed in the log file.</doc>
-<msg timestamp="20211127 14:07:01.799" level="INFO" html="true">&lt;a href="recording_3.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_3.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211127 14:07:01.736" endtime="20211127 14:07:01.799"/>
+<kw name="Stop Gif Recording" library="ScreenCapLibrary">
+<doc>Stops the GIF recording and generates the file. If ``embed`` argument was set to ``True`` the
+GIF will be displayed in the log file.</doc>
+<msg timestamp="20211127 14:20:50.372" level="INFO" html="true">&lt;a href="screenshot_3.gif"&gt;&lt;img src="screenshot_3.gif" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 14:20:50.165" endtime="20211127 14:20:51.615"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211127 14:07:01.800" endtime="20211127 14:07:04.421"/>
+<status status="PASS" starttime="20211127 14:20:51.615" endtime="20211127 14:20:56.025"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:01.576" endtime="20211127 14:07:04.422"/>
+<status status="PASS" starttime="20211127 14:20:49.900" endtime="20211127 14:20:56.025"/>
 </kw>
-<status status="PASS" starttime="20211127 14:06:46.196" endtime="20211127 14:07:04.424"/>
+<status status="PASS" starttime="20211127 14:20:39.099" endtime="20211127 14:20:56.026"/>
 </test>
-<status status="PASS" starttime="20211127 14:06:23.288" endtime="20211127 14:07:04.427"/>
+<status status="PASS" starttime="20211127 14:20:19.269" endtime="20211127 14:20:56.029"/>
 </suite>
 <suite id="s1-s3" name="Removetask" source="D:\www\TestesAutomatizados\Testing-LanzaWebSite\tests\removetask.robot">
 <test id="s1-s3-t1" name="Remover uma tarefa">
 <kw name="Abrir navegador" library="base" type="SETUP">
-<kw name="Start Video Recording" library="ScreenCapLibrary">
-<doc>Starts the recording of a video in the background with the specified ``name``.
-The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
-<msg timestamp="20211127 14:07:06.729" level="INFO">Automatically setting a fps of 5.5</msg>
-<status status="PASS" starttime="20211127 14:07:04.455" endtime="20211127 14:07:06.737"/>
+<kw name="Start Gif Recording" library="ScreenCapLibrary">
+<doc>Starts the recording of a GIF in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Gif Recording` keyword.</doc>
+<status status="PASS" starttime="20211127 14:20:56.059" endtime="20211127 14:20:56.062"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211127 14:07:06.738" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
-<status status="PASS" starttime="20211127 14:07:06.738" endtime="20211127 14:07:11.314"/>
+<msg timestamp="20211127 14:20:56.064" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
+<status status="PASS" starttime="20211127 14:20:56.063" endtime="20211127 14:21:02.617"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:04.454" endtime="20211127 14:07:11.314"/>
+<status status="PASS" starttime="20211127 14:20:56.057" endtime="20211127 14:21:02.618"/>
 </kw>
 <kw name="Acessar a página home do site" library="base">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>To-Do React App</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211127 14:07:11.353" level="INFO">Page title is 'To-Do React App'.</msg>
-<status status="PASS" starttime="20211127 14:07:11.317" endtime="20211127 14:07:11.353"/>
+<msg timestamp="20211127 14:21:02.673" level="INFO">Page title is 'To-Do React App'.</msg>
+<status status="PASS" starttime="20211127 14:21:02.652" endtime="20211127 14:21:02.673"/>
 </kw>
 <kw name="Page Should Contain Link" library="SeleniumLibrary">
 <arg>xpath=//a[contains(.,"My Todos")]</arg>
 <doc>Verifies link identified by ``locator`` is found from current page.</doc>
-<msg timestamp="20211127 14:07:11.406" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
-<status status="PASS" starttime="20211127 14:07:11.353" endtime="20211127 14:07:11.407"/>
+<msg timestamp="20211127 14:21:02.715" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
+<status status="PASS" starttime="20211127 14:21:02.673" endtime="20211127 14:21:02.715"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//caption</arg>
 <arg>Lista de Tarefas</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20211127 14:07:11.408" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
-<status status="PASS" starttime="20211127 14:07:11.407" endtime="20211127 14:07:11.558"/>
+<msg timestamp="20211127 14:21:02.716" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
+<status status="PASS" starttime="20211127 14:21:02.715" endtime="20211127 14:21:02.768"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211127 14:07:13.563" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211127 14:07:11.559" endtime="20211127 14:07:13.563"/>
+<msg timestamp="20211127 14:21:04.778" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 14:21:02.768" endtime="20211127 14:21:04.778"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:11.316" endtime="20211127 14:07:13.564"/>
+<status status="PASS" starttime="20211127 14:21:02.651" endtime="20211127 14:21:04.779"/>
 </kw>
 <kw name="Criar uma tarefa" library="base">
 <for flavor="IN RANGE">
@@ -398,140 +388,137 @@ The recording can be stopped by calling the `Stop Video Recording` keyword.</doc
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=span &gt; svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 14:07:13.566" endtime="20211127 14:07:13.618"/>
+<status status="PASS" starttime="20211127 14:21:04.782" endtime="20211127 14:21:04.884"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="uk-icon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:13.619" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
-<status status="PASS" starttime="20211127 14:07:13.618" endtime="20211127 14:07:13.870"/>
+<msg timestamp="20211127 14:21:04.885" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 14:21:04.884" endtime="20211127 14:21:05.183"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder="${Placeholder}"]</arg>
 <arg>${Task}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:13.873" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
-<status status="PASS" starttime="20211127 14:07:13.871" endtime="20211127 14:07:14.669"/>
+<msg timestamp="20211127 14:21:05.185" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 14:21:05.184" endtime="20211127 14:21:05.812"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,"${Save}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:14.670" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
-<status status="PASS" starttime="20211127 14:07:14.669" endtime="20211127 14:07:14.936"/>
+<msg timestamp="20211127 14:21:05.813" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 14:21:05.812" endtime="20211127 14:21:05.984"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 2</arg>
 <arg>Log To Console</arg>
 <arg>01 Task criada</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 14:07:14.937" endtime="20211127 14:07:14.938"/>
+<status status="PASS" starttime="20211127 14:21:05.984" endtime="20211127 14:21:05.985"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 2</arg>
 <arg>Log</arg>
 <arg>01 Task criada</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 14:07:14.939" endtime="20211127 14:07:14.941"/>
+<status status="PASS" starttime="20211127 14:21:05.986" endtime="20211127 14:21:05.986"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:13.566" endtime="20211127 14:07:14.941"/>
+<status status="PASS" starttime="20211127 14:21:04.782" endtime="20211127 14:21:05.986"/>
 </iter>
-<status status="PASS" starttime="20211127 14:07:13.565" endtime="20211127 14:07:14.941"/>
+<status status="PASS" starttime="20211127 14:21:04.781" endtime="20211127 14:21:05.986"/>
 </for>
-<status status="PASS" starttime="20211127 14:07:13.564" endtime="20211127 14:07:14.942"/>
+<status status="PASS" starttime="20211127 14:21:04.780" endtime="20211127 14:21:05.987"/>
 </kw>
 <kw name="Remover tarefa criada" library="base">
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>xpath=//input[1][@type="checkbox"]</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:14.948" level="INFO">Selecting checkbox 'xpath=//input[1][@type="checkbox"]'.</msg>
-<status status="PASS" starttime="20211127 14:07:14.947" endtime="20211127 14:07:15.282"/>
+<msg timestamp="20211127 14:21:05.993" level="INFO">Selecting checkbox 'xpath=//input[1][@type="checkbox"]'.</msg>
+<status status="PASS" starttime="20211127 14:21:05.993" endtime="20211127 14:21:06.296"/>
 </kw>
 <kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
 <arg>xpath=//input[1][@type="checkbox"]</arg>
 <doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20211127 14:07:15.284" level="INFO">Verifying checkbox 'xpath=//input[1][@type="checkbox"]' is selected.</msg>
-<status status="PASS" starttime="20211127 14:07:15.283" endtime="20211127 14:07:15.397"/>
+<msg timestamp="20211127 14:21:06.297" level="INFO">Verifying checkbox 'xpath=//input[1][@type="checkbox"]' is selected.</msg>
+<status status="PASS" starttime="20211127 14:21:06.297" endtime="20211127 14:21:06.463"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css=button &gt; svg</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:15.398" level="INFO">Clicking element 'css=button &gt; svg'.</msg>
-<status status="PASS" starttime="20211127 14:07:15.397" endtime="20211127 14:07:15.545"/>
+<msg timestamp="20211127 14:21:06.464" level="INFO">Clicking element 'css=button &gt; svg'.</msg>
+<status status="PASS" starttime="20211127 14:21:06.463" endtime="20211127 14:21:06.630"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211127 14:07:20.562" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211127 14:07:15.546" endtime="20211127 14:07:20.563"/>
+<msg timestamp="20211127 14:21:11.645" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211127 14:21:06.630" endtime="20211127 14:21:11.645"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:14.946" endtime="20211127 14:07:20.564"/>
+<status status="PASS" starttime="20211127 14:21:05.992" endtime="20211127 14:21:11.654"/>
 </kw>
 <kw name="Fechar navegador" library="base" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211127 14:07:21.216" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211127 14:07:20.613" endtime="20211127 14:07:21.219"/>
+<msg timestamp="20211127 14:21:11.828" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 14:21:11.665" endtime="20211127 14:21:11.828"/>
 </kw>
-<kw name="Stop Video Recording" library="ScreenCapLibrary">
-<doc>Stops the video recording corresponding to the given ``alias`` and generates the file in WebM format. If no
-``alias`` is specified, the last opened recording will be closed. If there are more recordings with the same
-alias all of them will be closed. If ``embed`` argument was set to
-``True`` the video will be displayed in the log file.</doc>
-<msg timestamp="20211127 14:07:22.774" level="INFO" html="true">&lt;a href="recording_4.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_4.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211127 14:07:21.221" endtime="20211127 14:07:22.774"/>
+<kw name="Stop Gif Recording" library="ScreenCapLibrary">
+<doc>Stops the GIF recording and generates the file. If ``embed`` argument was set to ``True`` the
+GIF will be displayed in the log file.</doc>
+<msg timestamp="20211127 14:21:12.023" level="INFO" html="true">&lt;a href="screenshot_4.gif"&gt;&lt;img src="screenshot_4.gif" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 14:21:11.828" endtime="20211127 14:21:13.526"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211127 14:07:22.774" endtime="20211127 14:07:32.832"/>
+<status status="PASS" starttime="20211127 14:21:13.527" endtime="20211127 14:21:17.463"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:20.606" endtime="20211127 14:07:32.833"/>
+<status status="PASS" starttime="20211127 14:21:11.662" endtime="20211127 14:21:17.464"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:04.452" endtime="20211127 14:07:32.834"/>
+<status status="PASS" starttime="20211127 14:20:56.055" endtime="20211127 14:21:17.464"/>
 </test>
 <test id="s1-s3-t2" name="Remover várias tarefas">
 <kw name="Abrir navegador" library="base" type="SETUP">
-<kw name="Start Video Recording" library="ScreenCapLibrary">
-<doc>Starts the recording of a video in the background with the specified ``name``.
-The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
-<msg timestamp="20211127 14:07:35.097" level="INFO">Automatically setting a fps of 4.0</msg>
-<status status="PASS" starttime="20211127 14:07:32.843" endtime="20211127 14:07:35.109"/>
+<kw name="Start Gif Recording" library="ScreenCapLibrary">
+<doc>Starts the recording of a GIF in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Gif Recording` keyword.</doc>
+<status status="PASS" starttime="20211127 14:21:17.469" endtime="20211127 14:21:17.472"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211127 14:07:35.110" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
-<status status="PASS" starttime="20211127 14:07:35.109" endtime="20211127 14:07:42.999"/>
+<msg timestamp="20211127 14:21:17.473" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
+<status status="PASS" starttime="20211127 14:21:17.472" endtime="20211127 14:21:22.198"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:32.842" endtime="20211127 14:07:43.000"/>
+<status status="PASS" starttime="20211127 14:21:17.468" endtime="20211127 14:21:22.199"/>
 </kw>
 <kw name="Acessar a página home do site" library="base">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>To-Do React App</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211127 14:07:43.086" level="INFO">Page title is 'To-Do React App'.</msg>
-<status status="PASS" starttime="20211127 14:07:43.015" endtime="20211127 14:07:43.086"/>
+<msg timestamp="20211127 14:21:22.264" level="INFO">Page title is 'To-Do React App'.</msg>
+<status status="PASS" starttime="20211127 14:21:22.217" endtime="20211127 14:21:22.265"/>
 </kw>
 <kw name="Page Should Contain Link" library="SeleniumLibrary">
 <arg>xpath=//a[contains(.,"My Todos")]</arg>
 <doc>Verifies link identified by ``locator`` is found from current page.</doc>
-<msg timestamp="20211127 14:07:43.172" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
-<status status="PASS" starttime="20211127 14:07:43.087" endtime="20211127 14:07:43.172"/>
+<msg timestamp="20211127 14:21:22.301" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
+<status status="PASS" starttime="20211127 14:21:22.265" endtime="20211127 14:21:22.301"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//caption</arg>
 <arg>Lista de Tarefas</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20211127 14:07:43.174" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
-<status status="PASS" starttime="20211127 14:07:43.173" endtime="20211127 14:07:43.286"/>
+<msg timestamp="20211127 14:21:22.303" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
+<status status="PASS" starttime="20211127 14:21:22.302" endtime="20211127 14:21:22.368"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211127 14:07:45.295" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211127 14:07:43.287" endtime="20211127 14:07:45.295"/>
+<msg timestamp="20211127 14:21:24.378" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 14:21:22.368" endtime="20211127 14:21:24.378"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:43.014" endtime="20211127 14:07:45.295"/>
+<status status="PASS" starttime="20211127 14:21:22.216" endtime="20211127 14:21:24.379"/>
 </kw>
 <kw name="Criar várias tarefas" library="base">
 <for flavor="IN RANGE">
@@ -543,194 +530,194 @@ The recording can be stopped by calling the `Stop Video Recording` keyword.</doc
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=span &gt; svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 14:07:45.299" endtime="20211127 14:07:45.568"/>
+<status status="PASS" starttime="20211127 14:21:24.628" endtime="20211127 14:21:24.842"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="uk-icon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:45.569" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
-<status status="PASS" starttime="20211127 14:07:45.569" endtime="20211127 14:07:45.849"/>
+<msg timestamp="20211127 14:21:24.843" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 14:21:24.843" endtime="20211127 14:21:25.456"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder="${Placeholder}"]</arg>
 <arg>${Task}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:45.851" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
-<status status="PASS" starttime="20211127 14:07:45.850" endtime="20211127 14:07:46.247"/>
+<msg timestamp="20211127 14:21:25.458" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 14:21:25.456" endtime="20211127 14:21:27.275"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,"${Save}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:46.249" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
-<status status="PASS" starttime="20211127 14:07:46.248" endtime="20211127 14:07:46.401"/>
+<msg timestamp="20211127 14:21:27.277" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 14:21:27.276" endtime="20211127 14:21:28.406"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log To Console</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 14:07:46.403" endtime="20211127 14:07:46.404"/>
+<status status="PASS" starttime="20211127 14:21:28.407" endtime="20211127 14:21:28.407"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 14:07:46.404" endtime="20211127 14:07:46.405"/>
+<status status="PASS" starttime="20211127 14:21:28.407" endtime="20211127 14:21:28.408"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:45.298" endtime="20211127 14:07:46.405"/>
+<status status="PASS" starttime="20211127 14:21:24.626" endtime="20211127 14:21:28.408"/>
 </iter>
 <iter>
 <var name="${COUNT}">2</var>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=span &gt; svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 14:07:46.406" endtime="20211127 14:07:46.505"/>
+<status status="PASS" starttime="20211127 14:21:28.409" endtime="20211127 14:21:28.604"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="uk-icon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:46.507" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
-<status status="PASS" starttime="20211127 14:07:46.506" endtime="20211127 14:07:46.699"/>
+<msg timestamp="20211127 14:21:28.606" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 14:21:28.605" endtime="20211127 14:21:29.072"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder="${Placeholder}"]</arg>
 <arg>${Task}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:46.701" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
-<status status="PASS" starttime="20211127 14:07:46.700" endtime="20211127 14:07:47.063"/>
+<msg timestamp="20211127 14:21:29.073" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 14:21:29.072" endtime="20211127 14:21:29.855"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,"${Save}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:47.064" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
-<status status="PASS" starttime="20211127 14:07:47.064" endtime="20211127 14:07:47.244"/>
+<msg timestamp="20211127 14:21:29.856" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 14:21:29.856" endtime="20211127 14:21:30.269"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log To Console</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 14:07:47.245" endtime="20211127 14:07:47.245"/>
+<status status="PASS" starttime="20211127 14:21:30.270" endtime="20211127 14:21:30.271"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 14:07:47.246" endtime="20211127 14:07:47.246"/>
+<status status="PASS" starttime="20211127 14:21:30.271" endtime="20211127 14:21:30.272"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:46.405" endtime="20211127 14:07:47.246"/>
+<status status="PASS" starttime="20211127 14:21:28.408" endtime="20211127 14:21:30.272"/>
 </iter>
 <iter>
 <var name="${COUNT}">3</var>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=span &gt; svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 14:07:47.247" endtime="20211127 14:07:47.294"/>
+<status status="PASS" starttime="20211127 14:21:30.272" endtime="20211127 14:21:30.432"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="uk-icon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:47.295" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
-<status status="PASS" starttime="20211127 14:07:47.294" endtime="20211127 14:07:47.374"/>
+<msg timestamp="20211127 14:21:30.433" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 14:21:30.432" endtime="20211127 14:21:30.574"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder="${Placeholder}"]</arg>
 <arg>${Task}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:47.375" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
-<status status="PASS" starttime="20211127 14:07:47.374" endtime="20211127 14:07:47.891"/>
+<msg timestamp="20211127 14:21:30.578" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 14:21:30.575" endtime="20211127 14:21:31.009"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,"${Save}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:47.892" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
-<status status="PASS" starttime="20211127 14:07:47.891" endtime="20211127 14:07:48.032"/>
+<msg timestamp="20211127 14:21:31.011" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 14:21:31.009" endtime="20211127 14:21:31.170"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log To Console</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 14:07:48.033" endtime="20211127 14:07:48.036"/>
+<status status="PASS" starttime="20211127 14:21:31.171" endtime="20211127 14:21:31.171"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 14:07:48.036" endtime="20211127 14:07:48.038"/>
+<status status="PASS" starttime="20211127 14:21:31.172" endtime="20211127 14:21:31.172"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:47.246" endtime="20211127 14:07:48.038"/>
+<status status="PASS" starttime="20211127 14:21:30.272" endtime="20211127 14:21:31.173"/>
 </iter>
 <iter>
 <var name="${COUNT}">4</var>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=span &gt; svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 14:07:48.039" endtime="20211127 14:07:48.142"/>
+<status status="PASS" starttime="20211127 14:21:31.173" endtime="20211127 14:21:31.220"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="uk-icon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:48.143" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
-<status status="PASS" starttime="20211127 14:07:48.142" endtime="20211127 14:07:48.244"/>
+<msg timestamp="20211127 14:21:31.221" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 14:21:31.221" endtime="20211127 14:21:31.353"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder="${Placeholder}"]</arg>
 <arg>${Task}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:48.245" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
-<status status="PASS" starttime="20211127 14:07:48.244" endtime="20211127 14:07:48.581"/>
+<msg timestamp="20211127 14:21:31.355" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 14:21:31.354" endtime="20211127 14:21:31.882"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,"${Save}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:48.582" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
-<status status="PASS" starttime="20211127 14:07:48.581" endtime="20211127 14:07:48.714"/>
+<msg timestamp="20211127 14:21:31.884" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 14:21:31.883" endtime="20211127 14:21:32.095"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log To Console</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 14:07:48.714" endtime="20211127 14:07:48.715"/>
+<status status="PASS" starttime="20211127 14:21:32.096" endtime="20211127 14:21:32.097"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 14:07:48.716" endtime="20211127 14:07:48.717"/>
+<status status="PASS" starttime="20211127 14:21:32.097" endtime="20211127 14:21:32.098"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:48.038" endtime="20211127 14:07:48.717"/>
+<status status="PASS" starttime="20211127 14:21:31.173" endtime="20211127 14:21:32.098"/>
 </iter>
 <iter>
 <var name="${COUNT}">5</var>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=span &gt; svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 14:07:48.719" endtime="20211127 14:07:48.765"/>
+<status status="PASS" starttime="20211127 14:21:32.098" endtime="20211127 14:21:32.232"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="uk-icon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:48.766" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
-<status status="PASS" starttime="20211127 14:07:48.765" endtime="20211127 14:07:48.873"/>
+<msg timestamp="20211127 14:21:32.233" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 14:21:32.233" endtime="20211127 14:21:32.339"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder="${Placeholder}"]</arg>
 <arg>${Task}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:48.874" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
-<status status="PASS" starttime="20211127 14:07:48.873" endtime="20211127 14:07:49.313"/>
+<msg timestamp="20211127 14:21:32.343" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 14:21:32.339" endtime="20211127 14:21:32.726"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,"${Save}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:49.314" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
-<status status="PASS" starttime="20211127 14:07:49.313" endtime="20211127 14:07:49.530"/>
+<msg timestamp="20211127 14:21:32.728" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 14:21:32.727" endtime="20211127 14:21:32.917"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
@@ -740,9 +727,9 @@ The recording can be stopped by calling the `Stop Video Recording` keyword.</doc
 <kw name="Log To Console" library="BuiltIn">
 <arg>05 Tasks criadas</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211127 14:07:49.531" endtime="20211127 14:07:49.551"/>
+<status status="PASS" starttime="20211127 14:21:32.918" endtime="20211127 14:21:32.919"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:49.530" endtime="20211127 14:07:49.551"/>
+<status status="PASS" starttime="20211127 14:21:32.917" endtime="20211127 14:21:32.919"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
@@ -752,16 +739,16 @@ The recording can be stopped by calling the `Stop Video Recording` keyword.</doc
 <kw name="Log" library="BuiltIn">
 <arg>05 Tasks criadas</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211127 14:07:49.555" level="INFO">05 Tasks criadas</msg>
-<status status="PASS" starttime="20211127 14:07:49.554" endtime="20211127 14:07:49.555"/>
+<msg timestamp="20211127 14:21:32.921" level="INFO">05 Tasks criadas</msg>
+<status status="PASS" starttime="20211127 14:21:32.921" endtime="20211127 14:21:32.921"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:49.552" endtime="20211127 14:07:49.555"/>
+<status status="PASS" starttime="20211127 14:21:32.920" endtime="20211127 14:21:32.921"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:48.718" endtime="20211127 14:07:49.555"/>
+<status status="PASS" starttime="20211127 14:21:32.098" endtime="20211127 14:21:32.922"/>
 </iter>
-<status status="PASS" starttime="20211127 14:07:45.298" endtime="20211127 14:07:49.555"/>
+<status status="PASS" starttime="20211127 14:21:24.626" endtime="20211127 14:21:32.922"/>
 </for>
-<status status="PASS" starttime="20211127 14:07:45.298" endtime="20211127 14:07:49.556"/>
+<status status="PASS" starttime="20211127 14:21:24.625" endtime="20211127 14:21:32.922"/>
 </kw>
 <kw name="Remover todas tarefas criadas" library="base">
 <for flavor="IN RANGE">
@@ -773,52 +760,52 @@ The recording can be stopped by calling the `Stop Video Recording` keyword.</doc
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:49.578" level="INFO">Selecting checkbox 'css=tr:nth-child(2) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
-<status status="PASS" starttime="20211127 14:07:49.578" endtime="20211127 14:07:50.243"/>
+<msg timestamp="20211127 14:21:32.928" level="INFO">Selecting checkbox 'css=tr:nth-child(2) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 14:21:32.927" endtime="20211127 14:21:33.335"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:49.577" endtime="20211127 14:07:50.243"/>
+<status status="PASS" starttime="20211127 14:21:32.927" endtime="20211127 14:21:33.335"/>
 </iter>
 <iter>
 <var name="${COUNT1}">3</var>
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:50.244" level="INFO">Selecting checkbox 'css=tr:nth-child(3) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
-<status status="PASS" starttime="20211127 14:07:50.243" endtime="20211127 14:07:50.724"/>
+<msg timestamp="20211127 14:21:33.336" level="INFO">Selecting checkbox 'css=tr:nth-child(3) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 14:21:33.335" endtime="20211127 14:21:33.625"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:50.243" endtime="20211127 14:07:50.724"/>
+<status status="PASS" starttime="20211127 14:21:33.335" endtime="20211127 14:21:33.625"/>
 </iter>
 <iter>
 <var name="${COUNT1}">4</var>
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:50.725" level="INFO">Selecting checkbox 'css=tr:nth-child(4) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
-<status status="PASS" starttime="20211127 14:07:50.724" endtime="20211127 14:07:51.426"/>
+<msg timestamp="20211127 14:21:33.628" level="INFO">Selecting checkbox 'css=tr:nth-child(4) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 14:21:33.627" endtime="20211127 14:21:34.035"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:50.724" endtime="20211127 14:07:51.426"/>
+<status status="PASS" starttime="20211127 14:21:33.626" endtime="20211127 14:21:34.036"/>
 </iter>
 <iter>
 <var name="${COUNT1}">5</var>
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:51.427" level="INFO">Selecting checkbox 'css=tr:nth-child(5) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
-<status status="PASS" starttime="20211127 14:07:51.427" endtime="20211127 14:07:51.774"/>
+<msg timestamp="20211127 14:21:34.037" level="INFO">Selecting checkbox 'css=tr:nth-child(5) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 14:21:34.036" endtime="20211127 14:21:34.298"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:51.426" endtime="20211127 14:07:51.774"/>
+<status status="PASS" starttime="20211127 14:21:34.036" endtime="20211127 14:21:34.299"/>
 </iter>
 <iter>
 <var name="${COUNT1}">6</var>
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:51.776" level="INFO">Selecting checkbox 'css=tr:nth-child(6) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
-<status status="PASS" starttime="20211127 14:07:51.775" endtime="20211127 14:07:52.044"/>
+<msg timestamp="20211127 14:21:34.300" level="INFO">Selecting checkbox 'css=tr:nth-child(6) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 14:21:34.299" endtime="20211127 14:21:34.555"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:51.775" endtime="20211127 14:07:52.045"/>
+<status status="PASS" starttime="20211127 14:21:34.299" endtime="20211127 14:21:34.555"/>
 </iter>
-<status status="PASS" starttime="20211127 14:07:49.576" endtime="20211127 14:07:52.045"/>
+<status status="PASS" starttime="20211127 14:21:32.926" endtime="20211127 14:21:34.555"/>
 </for>
 <for flavor="IN RANGE">
 <var>${COUNT2}</var>
@@ -829,80 +816,78 @@ The recording can be stopped by calling the `Stop Video Recording` keyword.</doc
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//tr[2]/td[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:52.049" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
-<status status="PASS" starttime="20211127 14:07:52.048" endtime="20211127 14:07:52.278"/>
+<msg timestamp="20211127 14:21:34.558" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 14:21:34.556" endtime="20211127 14:21:34.736"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:52.048" endtime="20211127 14:07:52.279"/>
+<status status="PASS" starttime="20211127 14:21:34.556" endtime="20211127 14:21:34.736"/>
 </iter>
 <iter>
 <var name="${COUNT2}">2</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//tr[2]/td[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:52.281" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
-<status status="PASS" starttime="20211127 14:07:52.279" endtime="20211127 14:07:52.710"/>
+<msg timestamp="20211127 14:21:34.739" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 14:21:34.737" endtime="20211127 14:21:34.901"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:52.279" endtime="20211127 14:07:52.710"/>
+<status status="PASS" starttime="20211127 14:21:34.736" endtime="20211127 14:21:34.901"/>
 </iter>
 <iter>
 <var name="${COUNT2}">3</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//tr[2]/td[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:52.713" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
-<status status="PASS" starttime="20211127 14:07:52.712" endtime="20211127 14:07:53.004"/>
+<msg timestamp="20211127 14:21:34.903" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 14:21:34.902" endtime="20211127 14:21:35.213"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:52.711" endtime="20211127 14:07:53.004"/>
+<status status="PASS" starttime="20211127 14:21:34.902" endtime="20211127 14:21:35.213"/>
 </iter>
 <iter>
 <var name="${COUNT2}">4</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//tr[2]/td[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:53.005" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
-<status status="PASS" starttime="20211127 14:07:53.004" endtime="20211127 14:07:53.257"/>
+<msg timestamp="20211127 14:21:35.214" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 14:21:35.214" endtime="20211127 14:21:35.388"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:53.004" endtime="20211127 14:07:53.257"/>
+<status status="PASS" starttime="20211127 14:21:35.213" endtime="20211127 14:21:35.388"/>
 </iter>
 <iter>
 <var name="${COUNT2}">5</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//tr[2]/td[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 14:07:53.258" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
-<status status="PASS" starttime="20211127 14:07:53.258" endtime="20211127 14:07:53.538"/>
+<msg timestamp="20211127 14:21:35.390" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 14:21:35.389" endtime="20211127 14:21:35.549"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:53.257" endtime="20211127 14:07:53.538"/>
+<status status="PASS" starttime="20211127 14:21:35.389" endtime="20211127 14:21:35.550"/>
 </iter>
-<status status="PASS" starttime="20211127 14:07:52.045" endtime="20211127 14:07:53.538"/>
+<status status="PASS" starttime="20211127 14:21:34.555" endtime="20211127 14:21:35.550"/>
 </for>
-<status status="PASS" starttime="20211127 14:07:49.575" endtime="20211127 14:07:53.539"/>
+<status status="PASS" starttime="20211127 14:21:32.924" endtime="20211127 14:21:35.551"/>
 </kw>
 <kw name="Fechar navegador" library="base" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211127 14:07:53.741" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211127 14:07:53.541" endtime="20211127 14:07:53.741"/>
+<msg timestamp="20211127 14:21:35.728" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 14:21:35.572" endtime="20211127 14:21:35.729"/>
 </kw>
-<kw name="Stop Video Recording" library="ScreenCapLibrary">
-<doc>Stops the video recording corresponding to the given ``alias`` and generates the file in WebM format. If no
-``alias`` is specified, the last opened recording will be closed. If there are more recordings with the same
-alias all of them will be closed. If ``embed`` argument was set to
-``True`` the video will be displayed in the log file.</doc>
-<msg timestamp="20211127 14:07:54.222" level="INFO" html="true">&lt;a href="recording_5.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_5.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211127 14:07:53.742" endtime="20211127 14:07:54.222"/>
+<kw name="Stop Gif Recording" library="ScreenCapLibrary">
+<doc>Stops the GIF recording and generates the file. If ``embed`` argument was set to ``True`` the
+GIF will be displayed in the log file.</doc>
+<msg timestamp="20211127 14:21:35.916" level="INFO" html="true">&lt;a href="screenshot_5.gif"&gt;&lt;img src="screenshot_5.gif" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 14:21:35.729" endtime="20211127 14:21:37.389"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211127 14:07:54.222" endtime="20211127 14:07:56.808"/>
+<status status="PASS" starttime="20211127 14:21:37.390" endtime="20211127 14:21:39.872"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:53.540" endtime="20211127 14:07:56.809"/>
+<status status="PASS" starttime="20211127 14:21:35.570" endtime="20211127 14:21:39.872"/>
 </kw>
-<status status="PASS" starttime="20211127 14:07:32.840" endtime="20211127 14:07:56.814"/>
+<status status="PASS" starttime="20211127 14:21:17.467" endtime="20211127 14:21:39.907"/>
 </test>
-<status status="PASS" starttime="20211127 14:07:04.432" endtime="20211127 14:07:56.817"/>
+<status status="PASS" starttime="20211127 14:20:56.035" endtime="20211127 14:21:39.926"/>
 </suite>
-<status status="PASS" starttime="20211127 14:06:04.548" endtime="20211127 14:07:56.822"/>
+<status status="PASS" starttime="20211127 14:20:06.626" endtime="20211127 14:21:39.936"/>
 </suite>
 <statistics>
 <total>
