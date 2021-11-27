@@ -46,4 +46,4 @@
 
 7. Ajuste na velocidade de execução das Keywords da SeleniumLibrary
 
-- `Set Selenium Speed (**valor em segundos**)`
+- `Set Selenium Speed (valor em segundos)`
