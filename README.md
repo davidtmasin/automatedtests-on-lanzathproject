@@ -28,10 +28,18 @@
 
   - `Library ScreenCapLibrary`
 
-- Adicionar a Keyword que inicia a gravação no Setup
+- Adicionar a Keyword que inicia a gravação no Setup (**gravação em vídeo**)
 
   - `Start Video Recording`
 
 - Adicionar a Keyword que encerra a gravação no Teardown
 
   - `Stop Video Recording`
+
+- Adicionar a Keyword que inicia a gravação no Setup (**gravação em gif**)
+
+  - `Start Gif Recording`
+
+- Adicionar a Keyword que encerra a gravação no Teardown
+
+  - `Stop Gif Recording`
