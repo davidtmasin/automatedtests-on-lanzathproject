@@ -9,4 +9,5 @@ Test Teardown                          Fechar navegador
 **** Test Case ****
 
 Verificar se a página inicial é acessível
+  [tags]  test1
   Acessar a página home do site

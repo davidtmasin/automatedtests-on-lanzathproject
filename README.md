@@ -43,3 +43,7 @@
 6. Adicionar a Keyword que encerra a gravação no Teardown
 
 - `Stop Gif Recording`
+
+7. Ajuste na velocidade de execução das Keywords da SeleniumLibrary
+
+- `Set Selenium Speed (valor em segundos)`
