@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211127 04:37:02.564" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="D:\www\TestesAutomatizados\Testing-LanzaWebSite\tests">
+<suite id="s1-s1" name="Homepage" source="D:\www\TestesAutomatizados\Testing-LanzaWebSite\tests\homepage.robot">
+<test id="s1-s1-t1" name="Verificar se a página inicial é acessível">
+<kw name="Abrir navegador" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211127 04:37:03.434" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
+<status status="PASS" starttime="20211127 04:37:03.433" endtime="20211127 04:37:07.243"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:03.431" endtime="20211127 04:37:07.244"/>
+</kw>
+<kw name="Acessar a página home do site" library="base">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>To-Do React App</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211127 04:37:07.279" level="INFO">Page title is 'To-Do React App'.</msg>
+<status status="PASS" starttime="20211127 04:37:07.252" endtime="20211127 04:37:07.280"/>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<arg>xpath=//a[contains(.,"My Todos")]</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20211127 04:37:07.342" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
+<status status="PASS" starttime="20211127 04:37:07.280" endtime="20211127 04:37:07.342"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath=//caption</arg>
+<arg>Lista de Tarefas</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211127 04:37:07.343" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
+<status status="PASS" starttime="20211127 04:37:07.343" endtime="20211127 04:37:07.404"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211127 04:37:09.408" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 04:37:07.405" endtime="20211127 04:37:09.411"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:07.247" endtime="20211127 04:37:09.416"/>
+</kw>
+<kw name="Fechar navegador" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211127 04:37:09.625" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-38.png"&gt;&lt;img src="selenium-screenshot-38.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 04:37:09.424" endtime="20211127 04:37:09.626"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211127 04:37:09.626" endtime="20211127 04:37:12.576"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:09.422" endtime="20211127 04:37:12.577"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:03.429" endtime="20211127 04:37:12.579"/>
+</test>
+<status status="PASS" starttime="20211127 04:37:02.699" endtime="20211127 04:37:12.584"/>
+</suite>
+<suite id="s1-s2" name="Newtask" source="D:\www\TestesAutomatizados\Testing-LanzaWebSite\tests\newtask.robot">
+<test id="s1-s2-t1" name="Criar uma nova tarefa">
+<kw name="Abrir navegador" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211127 04:37:12.630" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
+<status status="PASS" starttime="20211127 04:37:12.629" endtime="20211127 04:37:16.635"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:12.625" endtime="20211127 04:37:16.636"/>
+</kw>
+<kw name="Acessar a página home do site" library="base">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>To-Do React App</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211127 04:37:16.697" level="INFO">Page title is 'To-Do React App'.</msg>
+<status status="PASS" starttime="20211127 04:37:16.648" endtime="20211127 04:37:16.698"/>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<arg>xpath=//a[contains(.,"My Todos")]</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20211127 04:37:16.742" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
+<status status="PASS" starttime="20211127 04:37:16.698" endtime="20211127 04:37:16.743"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath=//caption</arg>
+<arg>Lista de Tarefas</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211127 04:37:16.744" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
+<status status="PASS" starttime="20211127 04:37:16.743" endtime="20211127 04:37:16.795"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211127 04:37:18.808" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 04:37:16.795" endtime="20211127 04:37:18.808"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:16.647" endtime="20211127 04:37:18.809"/>
+</kw>
+<kw name="Clicar no botão de mais" library="base">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=span &gt; svg</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211127 04:37:18.810" endtime="20211127 04:37:18.937"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[@class="uk-icon"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:37:18.938" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 04:37:18.938" endtime="20211127 04:37:19.156"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211127 04:37:21.171" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 04:37:19.157" endtime="20211127 04:37:21.172"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:18.810" endtime="20211127 04:37:21.172"/>
+</kw>
+<kw name="Digitar &quot;Estudar automatização de testes&quot; na caixa &quot;Nova tarefa...&quot;" library="base" sourcename="Digitar &quot;${NewTask}&quot; na caixa &quot;${PlaceholderTask}&quot;">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@placeholder="${PlaceholderTask}"]</arg>
+<arg>${NewTask}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211127 04:37:21.177" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 04:37:21.176" endtime="20211127 04:37:21.574"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211127 04:37:23.575" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 04:37:21.575" endtime="20211127 04:37:23.598"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:21.175" endtime="20211127 04:37:23.598"/>
+</kw>
+<kw name="Clicar no botão &quot;Salvar&quot;" library="base" sourcename="Clicar no botão &quot;${SaveBTN}&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[contains(.,"${SaveBTN}")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:37:23.619" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 04:37:23.608" endtime="20211127 04:37:23.937"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:23.604" endtime="20211127 04:37:23.937"/>
+</kw>
+<kw name="Verificar se a nova tarefa está visível" library="base">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//td[contains(.,"${Task}")]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211127 04:37:23.939" endtime="20211127 04:37:24.286"/>
+</kw>
+<kw name="Table Row Should Contain" library="SeleniumLibrary">
+<arg>xpath=//table[@class="uk-table"]</arg>
+<arg>2</arg>
+<arg>${Task}</arg>
+<doc>Verifies that table row contains text ``expected``.</doc>
+<status status="PASS" starttime="20211127 04:37:24.286" endtime="20211127 04:37:24.762"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${target}</var>
+<arg>//td[contains(.,"${Task}")]</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20211127 04:37:24.818" level="INFO">${target} = &lt;selenium.webdriver.remote.webelement.WebElement (session="3342ee1b87e4be48f46d07be3bdeb380", element="d6c3ba59-22ae-4715-8d02-9f84095295fa")&gt;</msg>
+<status status="PASS" starttime="20211127 04:37:24.763" endtime="20211127 04:37:24.818"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${target.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211127 04:37:24.818" endtime="20211127 04:37:24.866"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${target.text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211127 04:37:24.889" level="INFO">Estudar automatização de testes</msg>
+<status status="PASS" starttime="20211127 04:37:24.867" endtime="20211127 04:37:24.889"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${target.text}</arg>
+<arg>${Task}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20211127 04:37:24.889" endtime="20211127 04:37:24.923"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211127 04:37:26.932" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 04:37:24.924" endtime="20211127 04:37:26.932"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:23.938" endtime="20211127 04:37:26.932"/>
+</kw>
+<kw name="Fechar navegador" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211127 04:37:27.169" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-39.png"&gt;&lt;img src="selenium-screenshot-39.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 04:37:26.934" endtime="20211127 04:37:27.170"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211127 04:37:27.170" endtime="20211127 04:37:31.207"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:26.933" endtime="20211127 04:37:31.208"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:12.620" endtime="20211127 04:37:31.208"/>
+</test>
+<test id="s1-s2-t2" name="Criar uma nova tarefa sem informar o nome da tarefa">
+<kw name="Abrir navegador" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211127 04:37:31.215" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
+<status status="PASS" starttime="20211127 04:37:31.214" endtime="20211127 04:37:34.911"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:31.213" endtime="20211127 04:37:34.912"/>
+</kw>
+<kw name="Acessar a página home do site" library="base">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>To-Do React App</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211127 04:37:34.972" level="INFO">Page title is 'To-Do React App'.</msg>
+<status status="PASS" starttime="20211127 04:37:34.917" endtime="20211127 04:37:34.972"/>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<arg>xpath=//a[contains(.,"My Todos")]</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20211127 04:37:35.043" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
+<status status="PASS" starttime="20211127 04:37:34.972" endtime="20211127 04:37:35.043"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath=//caption</arg>
+<arg>Lista de Tarefas</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211127 04:37:35.045" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
+<status status="PASS" starttime="20211127 04:37:35.044" endtime="20211127 04:37:35.174"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211127 04:37:37.187" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 04:37:35.174" endtime="20211127 04:37:37.187"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:34.916" endtime="20211127 04:37:37.187"/>
+</kw>
+<kw name="Clicar no botão de mais" library="base">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=span &gt; svg</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211127 04:37:37.189" endtime="20211127 04:37:37.274"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[@class="uk-icon"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:37:37.275" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 04:37:37.274" endtime="20211127 04:37:37.640"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211127 04:37:39.653" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 04:37:37.640" endtime="20211127 04:37:39.653"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:37.188" endtime="20211127 04:37:39.654"/>
+</kw>
+<kw name="Clicar no botão &quot;Salvar&quot;" library="base" sourcename="Clicar no botão &quot;${SaveBTN}&quot;">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[contains(.,"${SaveBTN}")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:37:39.656" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 04:37:39.656" endtime="20211127 04:37:39.837"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:39.655" endtime="20211127 04:37:39.838"/>
+</kw>
+<kw name="Verificar se a mensagem de erro &quot;Tarefa inválida&quot; aparece" library="base" sourcename="Verificar se a mensagem de erro &quot;${MsgError}&quot; aparece">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${InvalidTask}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211127 04:37:39.844" endtime="20211127 04:37:39.956"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${InvalidTask}</arg>
+<arg>${MsgError}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211127 04:37:39.959" level="INFO">Verifying element 'xpath=//small/strong[contains(.,"Tarefa inválida")]' contains exact text 'Tarefa inválida'.</msg>
+<status status="PASS" starttime="20211127 04:37:39.956" endtime="20211127 04:37:40.023"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:39.841" endtime="20211127 04:37:40.024"/>
+</kw>
+<kw name="Fechar navegador" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211127 04:37:40.251" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-40.png"&gt;&lt;img src="selenium-screenshot-40.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 04:37:40.039" endtime="20211127 04:37:40.251"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211127 04:37:40.251" endtime="20211127 04:37:42.953"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:40.038" endtime="20211127 04:37:42.954"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:31.211" endtime="20211127 04:37:42.957"/>
+</test>
+<status status="PASS" starttime="20211127 04:37:12.594" endtime="20211127 04:37:42.962"/>
+</suite>
+<suite id="s1-s3" name="Removetask" source="D:\www\TestesAutomatizados\Testing-LanzaWebSite\tests\removetask.robot">
+<test id="s1-s3-t1" name="Remover uma tarefa">
+<kw name="Abrir navegador" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211127 04:37:42.995" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
+<status status="PASS" starttime="20211127 04:37:42.994" endtime="20211127 04:37:46.565"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:42.991" endtime="20211127 04:37:46.565"/>
+</kw>
+<kw name="Acessar a página home do site" library="base">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>To-Do React App</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211127 04:37:46.626" level="INFO">Page title is 'To-Do React App'.</msg>
+<status status="PASS" starttime="20211127 04:37:46.568" endtime="20211127 04:37:46.626"/>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<arg>xpath=//a[contains(.,"My Todos")]</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20211127 04:37:46.673" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
+<status status="PASS" starttime="20211127 04:37:46.626" endtime="20211127 04:37:46.673"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath=//caption</arg>
+<arg>Lista de Tarefas</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211127 04:37:46.674" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
+<status status="PASS" starttime="20211127 04:37:46.673" endtime="20211127 04:37:46.724"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211127 04:37:48.729" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 04:37:46.725" endtime="20211127 04:37:48.729"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:46.567" endtime="20211127 04:37:48.735"/>
+</kw>
+<kw name="Criar uma tarefa" library="base">
+<for flavor="IN RANGE">
+<var>${COUNT}</var>
+<value>1</value>
+<value>2</value>
+<iter>
+<var name="${COUNT}">1</var>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=span &gt; svg</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211127 04:37:48.738" endtime="20211127 04:37:48.813"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[@class="uk-icon"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:37:48.814" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 04:37:48.814" endtime="20211127 04:37:49.090"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@placeholder="${Placeholder}"]</arg>
+<arg>${Task}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211127 04:37:49.092" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 04:37:49.091" endtime="20211127 04:37:49.540"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[contains(.,"${Save}")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:37:49.541" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 04:37:49.540" endtime="20211127 04:37:49.830"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${COUNT} == 2</arg>
+<arg>Log To Console</arg>
+<arg>01 Task criada</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211127 04:37:49.831" endtime="20211127 04:37:49.834"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${COUNT} == 2</arg>
+<arg>Log</arg>
+<arg>01 Task criada</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211127 04:37:49.834" endtime="20211127 04:37:49.836"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:48.737" endtime="20211127 04:37:49.836"/>
+</iter>
+<status status="PASS" starttime="20211127 04:37:48.737" endtime="20211127 04:37:49.836"/>
+</for>
+<status status="PASS" starttime="20211127 04:37:48.736" endtime="20211127 04:37:49.836"/>
+</kw>
+<kw name="Remover tarefa criada" library="base">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>xpath=//input[1][@type="checkbox"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20211127 04:37:49.844" level="INFO">Selecting checkbox 'xpath=//input[1][@type="checkbox"]'.</msg>
+<status status="PASS" starttime="20211127 04:37:49.843" endtime="20211127 04:37:50.327"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>xpath=//input[1][@type="checkbox"]</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20211127 04:37:50.328" level="INFO">Verifying checkbox 'xpath=//input[1][@type="checkbox"]' is selected.</msg>
+<status status="PASS" starttime="20211127 04:37:50.327" endtime="20211127 04:37:50.422"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=button &gt; svg</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:37:50.423" level="INFO">Clicking element 'css=button &gt; svg'.</msg>
+<status status="PASS" starttime="20211127 04:37:50.422" endtime="20211127 04:37:50.593"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211127 04:37:55.598" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211127 04:37:50.594" endtime="20211127 04:37:55.598"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:49.842" endtime="20211127 04:37:55.599"/>
+</kw>
+<kw name="Fechar navegador" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211127 04:37:55.759" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-41.png"&gt;&lt;img src="selenium-screenshot-41.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 04:37:55.601" endtime="20211127 04:37:55.759"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211127 04:37:55.760" endtime="20211127 04:37:59.799"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:55.600" endtime="20211127 04:37:59.799"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:42.987" endtime="20211127 04:37:59.800"/>
+</test>
+<test id="s1-s3-t2" name="Remover várias tarefas">
+<kw name="Abrir navegador" library="base" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211127 04:37:59.809" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
+<status status="PASS" starttime="20211127 04:37:59.807" endtime="20211127 04:38:03.446"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:59.805" endtime="20211127 04:38:03.447"/>
+</kw>
+<kw name="Acessar a página home do site" library="base">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>To-Do React App</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211127 04:38:03.546" level="INFO">Page title is 'To-Do React App'.</msg>
+<status status="PASS" starttime="20211127 04:38:03.467" endtime="20211127 04:38:03.547"/>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<arg>xpath=//a[contains(.,"My Todos")]</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20211127 04:38:03.613" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
+<status status="PASS" starttime="20211127 04:38:03.548" endtime="20211127 04:38:03.614"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath=//caption</arg>
+<arg>Lista de Tarefas</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20211127 04:38:03.616" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
+<status status="PASS" starttime="20211127 04:38:03.615" endtime="20211127 04:38:03.733"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211127 04:38:05.740" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211127 04:38:03.733" endtime="20211127 04:38:05.741"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:03.464" endtime="20211127 04:38:05.741"/>
+</kw>
+<kw name="Criar várias tarefas" library="base">
+<for flavor="IN RANGE">
+<var>${COUNT}</var>
+<value>1</value>
+<value>6</value>
+<iter>
+<var name="${COUNT}">1</var>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=span &gt; svg</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211127 04:38:05.753" endtime="20211127 04:38:05.895"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[@class="uk-icon"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:05.896" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 04:38:05.895" endtime="20211127 04:38:06.154"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@placeholder="${Placeholder}"]</arg>
+<arg>${Task}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:06.156" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 04:38:06.154" endtime="20211127 04:38:06.766"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[contains(.,"${Save}")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:06.767" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 04:38:06.766" endtime="20211127 04:38:06.938"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${COUNT} == 5</arg>
+<arg>Log To Console</arg>
+<arg>05 Tasks criadas</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211127 04:38:06.939" endtime="20211127 04:38:06.940"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${COUNT} == 5</arg>
+<arg>Log</arg>
+<arg>05 Tasks criadas</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211127 04:38:06.940" endtime="20211127 04:38:06.941"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:05.753" endtime="20211127 04:38:06.941"/>
+</iter>
+<iter>
+<var name="${COUNT}">2</var>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=span &gt; svg</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211127 04:38:06.942" endtime="20211127 04:38:07.077"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[@class="uk-icon"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:07.081" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 04:38:07.079" endtime="20211127 04:38:07.326"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@placeholder="${Placeholder}"]</arg>
+<arg>${Task}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:07.331" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 04:38:07.327" endtime="20211127 04:38:07.803"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[contains(.,"${Save}")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:07.804" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 04:38:07.803" endtime="20211127 04:38:07.965"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${COUNT} == 5</arg>
+<arg>Log To Console</arg>
+<arg>05 Tasks criadas</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211127 04:38:07.966" endtime="20211127 04:38:07.967"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${COUNT} == 5</arg>
+<arg>Log</arg>
+<arg>05 Tasks criadas</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211127 04:38:07.967" endtime="20211127 04:38:07.968"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:06.942" endtime="20211127 04:38:07.968"/>
+</iter>
+<iter>
+<var name="${COUNT}">3</var>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=span &gt; svg</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211127 04:38:07.969" endtime="20211127 04:38:08.007"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[@class="uk-icon"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:08.009" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 04:38:08.008" endtime="20211127 04:38:08.106"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@placeholder="${Placeholder}"]</arg>
+<arg>${Task}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:08.107" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 04:38:08.106" endtime="20211127 04:38:08.577"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[contains(.,"${Save}")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:08.580" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 04:38:08.578" endtime="20211127 04:38:08.722"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${COUNT} == 5</arg>
+<arg>Log To Console</arg>
+<arg>05 Tasks criadas</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211127 04:38:08.722" endtime="20211127 04:38:08.722"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${COUNT} == 5</arg>
+<arg>Log</arg>
+<arg>05 Tasks criadas</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211127 04:38:08.723" endtime="20211127 04:38:08.724"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:07.968" endtime="20211127 04:38:08.724"/>
+</iter>
+<iter>
+<var name="${COUNT}">4</var>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=span &gt; svg</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211127 04:38:08.726" endtime="20211127 04:38:08.774"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[@class="uk-icon"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:08.777" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 04:38:08.775" endtime="20211127 04:38:08.887"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@placeholder="${Placeholder}"]</arg>
+<arg>${Task}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:08.888" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 04:38:08.888" endtime="20211127 04:38:09.238"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[contains(.,"${Save}")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:09.239" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 04:38:09.239" endtime="20211127 04:38:09.405"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${COUNT} == 5</arg>
+<arg>Log To Console</arg>
+<arg>05 Tasks criadas</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211127 04:38:09.405" endtime="20211127 04:38:09.407"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${COUNT} == 5</arg>
+<arg>Log</arg>
+<arg>05 Tasks criadas</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20211127 04:38:09.407" endtime="20211127 04:38:09.414"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:08.725" endtime="20211127 04:38:09.414"/>
+</iter>
+<iter>
+<var name="${COUNT}">5</var>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=span &gt; svg</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211127 04:38:09.415" endtime="20211127 04:38:09.463"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[@class="uk-icon"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:09.464" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 04:38:09.464" endtime="20211127 04:38:09.572"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@placeholder="${Placeholder}"]</arg>
+<arg>${Task}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:09.575" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 04:38:09.572" endtime="20211127 04:38:09.940"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[contains(.,"${Save}")]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:09.944" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 04:38:09.940" endtime="20211127 04:38:10.154"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${COUNT} == 5</arg>
+<arg>Log To Console</arg>
+<arg>05 Tasks criadas</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log To Console" library="BuiltIn">
+<arg>05 Tasks criadas</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211127 04:38:10.157" endtime="20211127 04:38:10.169"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:10.155" endtime="20211127 04:38:10.169"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${COUNT} == 5</arg>
+<arg>Log</arg>
+<arg>05 Tasks criadas</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log" library="BuiltIn">
+<arg>05 Tasks criadas</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211127 04:38:10.171" level="INFO">05 Tasks criadas</msg>
+<status status="PASS" starttime="20211127 04:38:10.170" endtime="20211127 04:38:10.171"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:10.169" endtime="20211127 04:38:10.171"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:09.414" endtime="20211127 04:38:10.171"/>
+</iter>
+<status status="PASS" starttime="20211127 04:38:05.752" endtime="20211127 04:38:10.172"/>
+</for>
+<status status="PASS" starttime="20211127 04:38:05.742" endtime="20211127 04:38:10.172"/>
+</kw>
+<kw name="Remover todas tarefas criadas" library="base">
+<for flavor="IN RANGE">
+<var>${COUNT1}</var>
+<value>2</value>
+<value>7</value>
+<iter>
+<var name="${COUNT1}">2</var>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:10.212" level="INFO">Selecting checkbox 'css=tr:nth-child(2) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 04:38:10.207" endtime="20211127 04:38:10.567"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:10.206" endtime="20211127 04:38:10.568"/>
+</iter>
+<iter>
+<var name="${COUNT1}">3</var>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:10.569" level="INFO">Selecting checkbox 'css=tr:nth-child(3) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 04:38:10.568" endtime="20211127 04:38:10.831"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:10.568" endtime="20211127 04:38:10.831"/>
+</iter>
+<iter>
+<var name="${COUNT1}">4</var>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:10.833" level="INFO">Selecting checkbox 'css=tr:nth-child(4) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 04:38:10.832" endtime="20211127 04:38:11.150"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:10.832" endtime="20211127 04:38:11.150"/>
+</iter>
+<iter>
+<var name="${COUNT1}">5</var>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:11.152" level="INFO">Selecting checkbox 'css=tr:nth-child(5) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 04:38:11.151" endtime="20211127 04:38:11.395"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:11.150" endtime="20211127 04:38:11.395"/>
+</iter>
+<iter>
+<var name="${COUNT1}">6</var>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:11.397" level="INFO">Selecting checkbox 'css=tr:nth-child(6) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 04:38:11.396" endtime="20211127 04:38:11.617"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:11.396" endtime="20211127 04:38:11.617"/>
+</iter>
+<status status="PASS" starttime="20211127 04:38:10.205" endtime="20211127 04:38:11.617"/>
+</for>
+<for flavor="IN RANGE">
+<var>${COUNT2}</var>
+<value>1</value>
+<value>6</value>
+<iter>
+<var name="${COUNT2}">1</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//tr[2]/td[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:11.619" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 04:38:11.618" endtime="20211127 04:38:11.800"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:11.618" endtime="20211127 04:38:11.800"/>
+</iter>
+<iter>
+<var name="${COUNT2}">2</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//tr[2]/td[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:11.801" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 04:38:11.801" endtime="20211127 04:38:11.938"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:11.800" endtime="20211127 04:38:11.938"/>
+</iter>
+<iter>
+<var name="${COUNT2}">3</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//tr[2]/td[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:11.943" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 04:38:11.941" endtime="20211127 04:38:12.168"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:11.939" endtime="20211127 04:38:12.169"/>
+</iter>
+<iter>
+<var name="${COUNT2}">4</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//tr[2]/td[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:12.170" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 04:38:12.169" endtime="20211127 04:38:12.292"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:12.169" endtime="20211127 04:38:12.292"/>
+</iter>
+<iter>
+<var name="${COUNT2}">5</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//tr[2]/td[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211127 04:38:12.294" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 04:38:12.293" endtime="20211127 04:38:12.400"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:12.293" endtime="20211127 04:38:12.401"/>
+</iter>
+<status status="PASS" starttime="20211127 04:38:11.617" endtime="20211127 04:38:12.401"/>
+</for>
+<status status="PASS" starttime="20211127 04:38:10.204" endtime="20211127 04:38:12.401"/>
+</kw>
+<kw name="Fechar navegador" library="base" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211127 04:38:12.617" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-42.png"&gt;&lt;img src="selenium-screenshot-42.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 04:38:12.404" endtime="20211127 04:38:12.617"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211127 04:38:12.617" endtime="20211127 04:38:17.696"/>
+</kw>
+<status status="PASS" starttime="20211127 04:38:12.402" endtime="20211127 04:38:17.696"/>
+</kw>
+<status status="PASS" starttime="20211127 04:37:59.803" endtime="20211127 04:38:17.701"/>
+</test>
+<status status="PASS" starttime="20211127 04:37:42.968" endtime="20211127 04:38:17.709"/>
+</suite>
+<status status="PASS" starttime="20211127 04:37:02.575" endtime="20211127 04:38:17.717"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Homepage">Tests.Homepage</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s2" name="Newtask">Tests.Newtask</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s3" name="Removetask">Tests.Removetask</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
