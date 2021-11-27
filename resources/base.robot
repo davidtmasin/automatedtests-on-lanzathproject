@@ -1,6 +1,6 @@
 **** Settings ****
 Library                                SeleniumLibrary
-
+Library                                ScreenCapLibrary
 
 **** Variables ****
 ${URL}                                 https://react-todo-lanzath.vercel.app/
@@ -12,11 +12,14 @@ ${Save}                                Salvar
 
 **** Keywords ****
 Abrir navegador
+  Start Video Recording
   Open Browser        ${URL}           ${BROWSER} 
 
 Fechar navegador
   Capture Page Screenshot
+  Stop Video Recording
   Close Browser
+  
 
 #passo a passo
 Acessar a página home do site

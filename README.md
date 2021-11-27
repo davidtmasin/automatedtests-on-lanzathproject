@@ -17,3 +17,21 @@
 ### Link direto para do projeto online (Deploy realizado no Vercel):
 
 **[react-typescript-todo-project](https://react-todo-git-main-lanzath.vercel.app/~)**
+
+### Informações adicionais
+
+- Biblioteca ScreenCapLibrary que possibilita gravar os testes foi instalada
+
+  - `pip install --upgrade robotframework-screencaplibrary`
+
+- Importada a biblioteca ScreenCapLibrary no arquivo **base.robot**
+
+  - `Library ScreenCapLibrary`
+
+- Adicionar a Keyword que inicia a gravação no Setup
+
+  - `Start Video Recording`
+
+- Adicionar a Keyword que encerra a gravação no Teardown
+
+  - `Stop Video Recording`
