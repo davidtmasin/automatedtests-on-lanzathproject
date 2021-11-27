@@ -14,11 +14,11 @@ ${Save}                                Salvar
 Abrir navegador
   Open Browser        ${URL}           ${BROWSER} 
   Maximize Browser Window
-  Start Video Recording
+  Start Gif Recording
 
 Fechar navegador
   Capture Page Screenshot
-  Stop Video Recording
+  Stop Gif Recording
   Close Browser
   
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211127 15:01:22.691" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211127 15:30:53.301" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="D:\www\TestesAutomatizados\Testing-LanzaWebSite\tests">
 <suite id="s1-s1" name="Removetask" source="D:\www\TestesAutomatizados\Testing-LanzaWebSite\tests\removetask.robot">
 <test id="s1-s1-t1" name="Remover várias tarefas">
@@ -8,48 +8,47 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211127 15:01:23.675" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
-<status status="PASS" starttime="20211127 15:01:23.674" endtime="20211127 15:01:27.045"/>
+<msg timestamp="20211127 15:30:55.218" level="INFO">Opening browser 'chrome' to base url 'https://react-todo-lanzath.vercel.app/'.</msg>
+<status status="PASS" starttime="20211127 15:30:55.217" endtime="20211127 15:30:59.823"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211127 15:01:27.046" endtime="20211127 15:01:27.241"/>
+<status status="PASS" starttime="20211127 15:30:59.824" endtime="20211127 15:31:00.082"/>
 </kw>
-<kw name="Start Video Recording" library="ScreenCapLibrary">
-<doc>Starts the recording of a video in the background with the specified ``name``.
-The recording can be stopped by calling the `Stop Video Recording` keyword.</doc>
-<msg timestamp="20211127 15:01:29.412" level="INFO">Automatically setting a fps of 12.0</msg>
-<status status="PASS" starttime="20211127 15:01:27.243" endtime="20211127 15:01:29.417"/>
+<kw name="Start Gif Recording" library="ScreenCapLibrary">
+<doc>Starts the recording of a GIF in the background with the specified ``name``.
+The recording can be stopped by calling the `Stop Gif Recording` keyword.</doc>
+<status status="PASS" starttime="20211127 15:31:00.082" endtime="20211127 15:31:00.087"/>
 </kw>
-<status status="PASS" starttime="20211127 15:01:23.673" endtime="20211127 15:01:29.417"/>
+<status status="PASS" starttime="20211127 15:30:55.214" endtime="20211127 15:31:00.087"/>
 </kw>
 <kw name="Acessar a página home do site" library="base">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>To-Do React App</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211127 15:01:29.429" level="INFO">Page title is 'To-Do React App'.</msg>
-<status status="PASS" starttime="20211127 15:01:29.422" endtime="20211127 15:01:29.429"/>
+<msg timestamp="20211127 15:31:00.100" level="INFO">Page title is 'To-Do React App'.</msg>
+<status status="PASS" starttime="20211127 15:31:00.092" endtime="20211127 15:31:00.101"/>
 </kw>
 <kw name="Page Should Contain Link" library="SeleniumLibrary">
 <arg>xpath=//a[contains(.,"My Todos")]</arg>
 <doc>Verifies link identified by ``locator`` is found from current page.</doc>
-<msg timestamp="20211127 15:01:29.504" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
-<status status="PASS" starttime="20211127 15:01:29.430" endtime="20211127 15:01:29.504"/>
+<msg timestamp="20211127 15:31:00.156" level="INFO">Current page contains link 'xpath=//a[contains(.,"My Todos")]'.</msg>
+<status status="PASS" starttime="20211127 15:31:00.101" endtime="20211127 15:31:00.156"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//caption</arg>
 <arg>Lista de Tarefas</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20211127 15:01:29.506" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
-<status status="PASS" starttime="20211127 15:01:29.505" endtime="20211127 15:01:29.579"/>
+<msg timestamp="20211127 15:31:00.157" level="INFO">Verifying element 'xpath=//caption' contains exact text 'Lista de Tarefas'.</msg>
+<status status="PASS" starttime="20211127 15:31:00.157" endtime="20211127 15:31:00.206"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211127 15:01:30.599" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211127 15:01:29.580" endtime="20211127 15:01:30.600"/>
+<msg timestamp="20211127 15:31:01.246" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211127 15:31:00.207" endtime="20211127 15:31:01.246"/>
 </kw>
-<status status="PASS" starttime="20211127 15:01:29.421" endtime="20211127 15:01:30.600"/>
+<status status="PASS" starttime="20211127 15:31:00.091" endtime="20211127 15:31:01.247"/>
 </kw>
 <kw name="Criar várias tarefas" library="base">
 <for flavor="IN RANGE">
@@ -61,269 +60,269 @@ The recording can be stopped by calling the `Stop Video Recording` keyword.</doc
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=span &gt; svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 15:01:30.620" endtime="20211127 15:01:30.707"/>
+<status status="PASS" starttime="20211127 15:31:01.253" endtime="20211127 15:31:01.332"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="uk-icon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:30.708" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
-<status status="PASS" starttime="20211127 15:01:30.708" endtime="20211127 15:01:30.909"/>
+<msg timestamp="20211127 15:31:01.333" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 15:31:01.332" endtime="20211127 15:31:01.593"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:30.909" endtime="20211127 15:01:30.910"/>
+<status status="PASS" starttime="20211127 15:31:01.594" endtime="20211127 15:31:01.595"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder="${Placeholder}"]</arg>
 <arg>${Task}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:30.914" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
-<status status="PASS" starttime="20211127 15:01:30.910" endtime="20211127 15:01:32.777"/>
+<msg timestamp="20211127 15:31:01.597" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 15:31:01.595" endtime="20211127 15:31:03.710"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:32.778" endtime="20211127 15:01:32.779"/>
+<status status="PASS" starttime="20211127 15:31:03.710" endtime="20211127 15:31:03.711"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,"${Save}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:32.780" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
-<status status="PASS" starttime="20211127 15:01:32.779" endtime="20211127 15:01:33.923"/>
+<msg timestamp="20211127 15:31:03.712" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 15:31:03.712" endtime="20211127 15:31:05.109"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:33.924" endtime="20211127 15:01:33.924"/>
+<status status="PASS" starttime="20211127 15:31:05.110" endtime="20211127 15:31:05.111"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log To Console</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 15:01:33.924" endtime="20211127 15:01:33.925"/>
+<status status="PASS" starttime="20211127 15:31:05.112" endtime="20211127 15:31:05.113"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 15:01:33.925" endtime="20211127 15:01:33.929"/>
+<status status="PASS" starttime="20211127 15:31:05.113" endtime="20211127 15:31:05.114"/>
 </kw>
-<status status="PASS" starttime="20211127 15:01:30.620" endtime="20211127 15:01:33.930"/>
+<status status="PASS" starttime="20211127 15:31:01.252" endtime="20211127 15:31:05.114"/>
 </iter>
 <iter>
 <var name="${COUNT}">2</var>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=span &gt; svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 15:01:33.930" endtime="20211127 15:01:34.995"/>
+<status status="PASS" starttime="20211127 15:31:05.115" endtime="20211127 15:31:06.206"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="uk-icon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:34.996" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
-<status status="PASS" starttime="20211127 15:01:34.995" endtime="20211127 15:01:36.104"/>
+<msg timestamp="20211127 15:31:06.207" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 15:31:06.206" endtime="20211127 15:31:07.344"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:36.104" endtime="20211127 15:01:36.105"/>
+<status status="PASS" starttime="20211127 15:31:07.344" endtime="20211127 15:31:07.345"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder="${Placeholder}"]</arg>
 <arg>${Task}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:36.105" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
-<status status="PASS" starttime="20211127 15:01:36.105" endtime="20211127 15:01:37.907"/>
+<msg timestamp="20211127 15:31:07.346" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 15:31:07.345" endtime="20211127 15:31:09.353"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:37.907" endtime="20211127 15:01:37.908"/>
+<status status="PASS" starttime="20211127 15:31:09.353" endtime="20211127 15:31:09.354"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,"${Save}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:37.909" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
-<status status="PASS" starttime="20211127 15:01:37.908" endtime="20211127 15:01:39.046"/>
+<msg timestamp="20211127 15:31:09.355" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 15:31:09.355" endtime="20211127 15:31:10.666"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:39.047" endtime="20211127 15:01:39.048"/>
+<status status="PASS" starttime="20211127 15:31:10.666" endtime="20211127 15:31:10.667"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log To Console</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 15:01:39.049" endtime="20211127 15:01:39.049"/>
+<status status="PASS" starttime="20211127 15:31:10.668" endtime="20211127 15:31:10.669"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 15:01:39.050" endtime="20211127 15:01:39.050"/>
+<status status="PASS" starttime="20211127 15:31:10.669" endtime="20211127 15:31:10.671"/>
 </kw>
-<status status="PASS" starttime="20211127 15:01:33.930" endtime="20211127 15:01:39.050"/>
+<status status="PASS" starttime="20211127 15:31:05.114" endtime="20211127 15:31:10.671"/>
 </iter>
 <iter>
 <var name="${COUNT}">3</var>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=span &gt; svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 15:01:39.051" endtime="20211127 15:01:40.114"/>
+<status status="PASS" starttime="20211127 15:31:10.672" endtime="20211127 15:31:11.739"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="uk-icon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:40.115" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
-<status status="PASS" starttime="20211127 15:01:40.114" endtime="20211127 15:01:41.215"/>
+<msg timestamp="20211127 15:31:11.740" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 15:31:11.740" endtime="20211127 15:31:12.990"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:41.215" endtime="20211127 15:01:41.216"/>
+<status status="PASS" starttime="20211127 15:31:12.991" endtime="20211127 15:31:12.991"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder="${Placeholder}"]</arg>
 <arg>${Task}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:41.217" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
-<status status="PASS" starttime="20211127 15:01:41.216" endtime="20211127 15:01:42.989"/>
+<msg timestamp="20211127 15:31:12.993" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 15:31:12.992" endtime="20211127 15:31:14.862"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:42.989" endtime="20211127 15:01:42.990"/>
+<status status="PASS" starttime="20211127 15:31:14.863" endtime="20211127 15:31:14.864"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,"${Save}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:42.990" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
-<status status="PASS" starttime="20211127 15:01:42.990" endtime="20211127 15:01:44.110"/>
+<msg timestamp="20211127 15:31:14.865" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 15:31:14.864" endtime="20211127 15:31:16.075"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:44.110" endtime="20211127 15:01:44.111"/>
+<status status="PASS" starttime="20211127 15:31:16.075" endtime="20211127 15:31:16.076"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log To Console</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 15:01:44.111" endtime="20211127 15:01:44.111"/>
+<status status="PASS" starttime="20211127 15:31:16.076" endtime="20211127 15:31:16.077"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 15:01:44.112" endtime="20211127 15:01:44.112"/>
+<status status="PASS" starttime="20211127 15:31:16.078" endtime="20211127 15:31:16.078"/>
 </kw>
-<status status="PASS" starttime="20211127 15:01:39.051" endtime="20211127 15:01:44.112"/>
+<status status="PASS" starttime="20211127 15:31:10.671" endtime="20211127 15:31:16.079"/>
 </iter>
 <iter>
 <var name="${COUNT}">4</var>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=span &gt; svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 15:01:44.113" endtime="20211127 15:01:45.157"/>
+<status status="PASS" starttime="20211127 15:31:16.079" endtime="20211127 15:31:17.142"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="uk-icon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:45.158" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
-<status status="PASS" starttime="20211127 15:01:45.157" endtime="20211127 15:01:46.282"/>
+<msg timestamp="20211127 15:31:17.144" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 15:31:17.143" endtime="20211127 15:31:18.319"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:46.282" endtime="20211127 15:01:46.283"/>
+<status status="PASS" starttime="20211127 15:31:18.320" endtime="20211127 15:31:18.321"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder="${Placeholder}"]</arg>
 <arg>${Task}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:46.283" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
-<status status="PASS" starttime="20211127 15:01:46.283" endtime="20211127 15:01:48.067"/>
+<msg timestamp="20211127 15:31:18.323" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 15:31:18.321" endtime="20211127 15:31:20.246"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:48.067" endtime="20211127 15:01:48.068"/>
+<status status="PASS" starttime="20211127 15:31:20.246" endtime="20211127 15:31:20.247"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,"${Save}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:48.069" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
-<status status="PASS" starttime="20211127 15:01:48.068" endtime="20211127 15:01:49.180"/>
+<msg timestamp="20211127 15:31:20.250" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 15:31:20.248" endtime="20211127 15:31:21.433"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:49.180" endtime="20211127 15:01:49.181"/>
+<status status="PASS" starttime="20211127 15:31:21.434" endtime="20211127 15:31:21.435"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log To Console</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 15:01:49.182" endtime="20211127 15:01:49.183"/>
+<status status="PASS" starttime="20211127 15:31:21.439" endtime="20211127 15:31:21.442"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
 <arg>Log</arg>
 <arg>05 Tasks criadas</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211127 15:01:49.184" endtime="20211127 15:01:49.184"/>
+<status status="PASS" starttime="20211127 15:31:21.443" endtime="20211127 15:31:21.444"/>
 </kw>
-<status status="PASS" starttime="20211127 15:01:44.112" endtime="20211127 15:01:49.185"/>
+<status status="PASS" starttime="20211127 15:31:16.079" endtime="20211127 15:31:21.444"/>
 </iter>
 <iter>
 <var name="${COUNT}">5</var>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>css=span &gt; svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211127 15:01:49.185" endtime="20211127 15:01:50.237"/>
+<status status="PASS" starttime="20211127 15:31:21.444" endtime="20211127 15:31:22.503"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//span[@class="uk-icon"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:50.238" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
-<status status="PASS" starttime="20211127 15:01:50.238" endtime="20211127 15:01:51.320"/>
+<msg timestamp="20211127 15:31:22.504" level="INFO">Clicking element 'xpath=//span[@class="uk-icon"]'.</msg>
+<status status="PASS" starttime="20211127 15:31:22.503" endtime="20211127 15:31:23.646"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:51.320" endtime="20211127 15:01:51.320"/>
+<status status="PASS" starttime="20211127 15:31:23.646" endtime="20211127 15:31:23.647"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder="${Placeholder}"]</arg>
 <arg>${Task}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:51.321" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
-<status status="PASS" starttime="20211127 15:01:51.321" endtime="20211127 15:01:53.123"/>
+<msg timestamp="20211127 15:31:23.650" level="INFO">Typing text 'Estudar automatização de testes' into text field '//input[@placeholder="Nova tarefa..."]'.</msg>
+<status status="PASS" starttime="20211127 15:31:23.648" endtime="20211127 15:31:25.503"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:53.124" endtime="20211127 15:01:53.125"/>
+<status status="PASS" starttime="20211127 15:31:25.503" endtime="20211127 15:31:25.505"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[contains(.,"${Save}")]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:53.126" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
-<status status="PASS" starttime="20211127 15:01:53.125" endtime="20211127 15:01:54.237"/>
+<msg timestamp="20211127 15:31:25.506" level="INFO">Clicking element '//button[contains(.,"Salvar")]'.</msg>
+<status status="PASS" starttime="20211127 15:31:25.505" endtime="20211127 15:31:26.639"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:54.240" endtime="20211127 15:01:54.241"/>
+<status status="PASS" starttime="20211127 15:31:26.639" endtime="20211127 15:31:26.641"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
@@ -333,9 +332,9 @@ The recording can be stopped by calling the `Stop Video Recording` keyword.</doc
 <kw name="Log To Console" library="BuiltIn">
 <arg>05 Tasks criadas</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211127 15:01:54.245" endtime="20211127 15:01:54.248"/>
+<status status="PASS" starttime="20211127 15:31:26.644" endtime="20211127 15:31:26.655"/>
 </kw>
-<status status="PASS" starttime="20211127 15:01:54.242" endtime="20211127 15:01:54.248"/>
+<status status="PASS" starttime="20211127 15:31:26.642" endtime="20211127 15:31:26.655"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${COUNT} == 5</arg>
@@ -345,16 +344,16 @@ The recording can be stopped by calling the `Stop Video Recording` keyword.</doc
 <kw name="Log" library="BuiltIn">
 <arg>05 Tasks criadas</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211127 15:01:54.251" level="INFO">05 Tasks criadas</msg>
-<status status="PASS" starttime="20211127 15:01:54.251" endtime="20211127 15:01:54.251"/>
+<msg timestamp="20211127 15:31:26.657" level="INFO">05 Tasks criadas</msg>
+<status status="PASS" starttime="20211127 15:31:26.656" endtime="20211127 15:31:26.657"/>
 </kw>
-<status status="PASS" starttime="20211127 15:01:54.249" endtime="20211127 15:01:54.251"/>
+<status status="PASS" starttime="20211127 15:31:26.655" endtime="20211127 15:31:26.657"/>
 </kw>
-<status status="PASS" starttime="20211127 15:01:49.185" endtime="20211127 15:01:54.251"/>
+<status status="PASS" starttime="20211127 15:31:21.444" endtime="20211127 15:31:26.657"/>
 </iter>
-<status status="PASS" starttime="20211127 15:01:30.619" endtime="20211127 15:01:54.251"/>
+<status status="PASS" starttime="20211127 15:31:01.252" endtime="20211127 15:31:26.657"/>
 </for>
-<status status="PASS" starttime="20211127 15:01:30.618" endtime="20211127 15:01:54.252"/>
+<status status="PASS" starttime="20211127 15:31:01.251" endtime="20211127 15:31:26.658"/>
 </kw>
 <kw name="Remover todas tarefas criadas" library="base">
 <for flavor="IN RANGE">
@@ -366,77 +365,77 @@ The recording can be stopped by calling the `Stop Video Recording` keyword.</doc
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:54.262" level="INFO">Selecting checkbox 'css=tr:nth-child(2) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
-<status status="PASS" starttime="20211127 15:01:54.261" endtime="20211127 15:01:56.930"/>
+<msg timestamp="20211127 15:31:26.672" level="INFO">Selecting checkbox 'css=tr:nth-child(2) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 15:31:26.670" endtime="20211127 15:31:29.429"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:56.930" endtime="20211127 15:01:56.931"/>
+<status status="PASS" starttime="20211127 15:31:29.430" endtime="20211127 15:31:29.431"/>
 </kw>
-<status status="PASS" starttime="20211127 15:01:54.261" endtime="20211127 15:01:56.931"/>
+<status status="PASS" starttime="20211127 15:31:26.670" endtime="20211127 15:31:29.431"/>
 </iter>
 <iter>
 <var name="${COUNT1}">3</var>
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:56.931" level="INFO">Selecting checkbox 'css=tr:nth-child(3) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
-<status status="PASS" starttime="20211127 15:01:56.931" endtime="20211127 15:01:59.612"/>
+<msg timestamp="20211127 15:31:29.433" level="INFO">Selecting checkbox 'css=tr:nth-child(3) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 15:31:29.432" endtime="20211127 15:31:32.150"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:01:59.612" endtime="20211127 15:01:59.613"/>
+<status status="PASS" starttime="20211127 15:31:32.150" endtime="20211127 15:31:32.151"/>
 </kw>
-<status status="PASS" starttime="20211127 15:01:56.931" endtime="20211127 15:01:59.613"/>
+<status status="PASS" starttime="20211127 15:31:29.431" endtime="20211127 15:31:32.151"/>
 </iter>
 <iter>
 <var name="${COUNT1}">4</var>
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211127 15:01:59.614" level="INFO">Selecting checkbox 'css=tr:nth-child(4) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
-<status status="PASS" starttime="20211127 15:01:59.613" endtime="20211127 15:02:02.273"/>
+<msg timestamp="20211127 15:31:32.153" level="INFO">Selecting checkbox 'css=tr:nth-child(4) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 15:31:32.151" endtime="20211127 15:31:34.872"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:02:02.273" endtime="20211127 15:02:02.275"/>
+<status status="PASS" starttime="20211127 15:31:34.874" endtime="20211127 15:31:34.875"/>
 </kw>
-<status status="PASS" starttime="20211127 15:01:59.613" endtime="20211127 15:02:02.275"/>
+<status status="PASS" starttime="20211127 15:31:32.151" endtime="20211127 15:31:34.875"/>
 </iter>
 <iter>
 <var name="${COUNT1}">5</var>
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211127 15:02:02.276" level="INFO">Selecting checkbox 'css=tr:nth-child(5) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
-<status status="PASS" starttime="20211127 15:02:02.275" endtime="20211127 15:02:04.960"/>
+<msg timestamp="20211127 15:31:34.877" level="INFO">Selecting checkbox 'css=tr:nth-child(5) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 15:31:34.876" endtime="20211127 15:31:37.598"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:02:04.961" endtime="20211127 15:02:04.961"/>
+<status status="PASS" starttime="20211127 15:31:37.598" endtime="20211127 15:31:37.599"/>
 </kw>
-<status status="PASS" starttime="20211127 15:02:02.275" endtime="20211127 15:02:04.961"/>
+<status status="PASS" starttime="20211127 15:31:34.875" endtime="20211127 15:31:37.599"/>
 </iter>
 <iter>
 <var name="${COUNT1}">6</var>
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>css=tr:nth-child(${COUNT1}) &gt; td:nth-child(1) &gt; label &gt; input</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20211127 15:02:04.963" level="INFO">Selecting checkbox 'css=tr:nth-child(6) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
-<status status="PASS" starttime="20211127 15:02:04.961" endtime="20211127 15:02:07.633"/>
+<msg timestamp="20211127 15:31:37.602" level="INFO">Selecting checkbox 'css=tr:nth-child(6) &gt; td:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20211127 15:31:37.600" endtime="20211127 15:31:40.334"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:02:07.633" endtime="20211127 15:02:07.634"/>
+<status status="PASS" starttime="20211127 15:31:40.334" endtime="20211127 15:31:40.335"/>
 </kw>
-<status status="PASS" starttime="20211127 15:02:04.961" endtime="20211127 15:02:07.634"/>
+<status status="PASS" starttime="20211127 15:31:37.600" endtime="20211127 15:31:40.335"/>
 </iter>
-<status status="PASS" starttime="20211127 15:01:54.260" endtime="20211127 15:02:07.634"/>
+<status status="PASS" starttime="20211127 15:31:26.669" endtime="20211127 15:31:40.335"/>
 </for>
 <for flavor="IN RANGE">
 <var>${COUNT2}</var>
@@ -447,106 +446,104 @@ The recording can be stopped by calling the `Stop Video Recording` keyword.</doc
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//tr[2]/td[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:02:07.635" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
-<status status="PASS" starttime="20211127 15:02:07.634" endtime="20211127 15:02:08.734"/>
+<msg timestamp="20211127 15:31:40.336" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 15:31:40.336" endtime="20211127 15:31:41.478"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:02:08.734" endtime="20211127 15:02:08.735"/>
+<status status="PASS" starttime="20211127 15:31:41.478" endtime="20211127 15:31:41.479"/>
 </kw>
-<status status="PASS" starttime="20211127 15:02:07.634" endtime="20211127 15:02:08.735"/>
+<status status="PASS" starttime="20211127 15:31:40.335" endtime="20211127 15:31:41.479"/>
 </iter>
 <iter>
 <var name="${COUNT2}">2</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//tr[2]/td[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:02:08.736" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
-<status status="PASS" starttime="20211127 15:02:08.735" endtime="20211127 15:02:09.821"/>
+<msg timestamp="20211127 15:31:41.480" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 15:31:41.479" endtime="20211127 15:31:42.600"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:02:09.821" endtime="20211127 15:02:09.822"/>
+<status status="PASS" starttime="20211127 15:31:42.601" endtime="20211127 15:31:42.602"/>
 </kw>
-<status status="PASS" starttime="20211127 15:02:08.735" endtime="20211127 15:02:09.822"/>
+<status status="PASS" starttime="20211127 15:31:41.479" endtime="20211127 15:31:42.602"/>
 </iter>
 <iter>
 <var name="${COUNT2}">3</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//tr[2]/td[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:02:09.824" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
-<status status="PASS" starttime="20211127 15:02:09.823" endtime="20211127 15:02:10.910"/>
+<msg timestamp="20211127 15:31:42.604" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 15:31:42.603" endtime="20211127 15:31:43.748"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:02:10.910" endtime="20211127 15:02:10.911"/>
+<status status="PASS" starttime="20211127 15:31:43.748" endtime="20211127 15:31:43.749"/>
 </kw>
-<status status="PASS" starttime="20211127 15:02:09.823" endtime="20211127 15:02:10.911"/>
+<status status="PASS" starttime="20211127 15:31:42.602" endtime="20211127 15:31:43.749"/>
 </iter>
 <iter>
 <var name="${COUNT2}">4</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//tr[2]/td[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:02:10.912" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
-<status status="PASS" starttime="20211127 15:02:10.911" endtime="20211127 15:02:11.995"/>
+<msg timestamp="20211127 15:31:43.750" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 15:31:43.749" endtime="20211127 15:31:44.898"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:02:11.996" endtime="20211127 15:02:11.997"/>
+<status status="PASS" starttime="20211127 15:31:44.898" endtime="20211127 15:31:44.899"/>
 </kw>
-<status status="PASS" starttime="20211127 15:02:10.911" endtime="20211127 15:02:11.997"/>
+<status status="PASS" starttime="20211127 15:31:43.749" endtime="20211127 15:31:44.899"/>
 </iter>
 <iter>
 <var name="${COUNT2}">5</var>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//tr[2]/td[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211127 15:02:11.998" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
-<status status="PASS" starttime="20211127 15:02:11.997" endtime="20211127 15:02:13.080"/>
+<msg timestamp="20211127 15:31:44.900" level="INFO">Clicking element 'xpath=//tr[2]/td[3]'.</msg>
+<status status="PASS" starttime="20211127 15:31:44.900" endtime="20211127 15:31:46.025"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.5</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20211127 15:02:13.080" endtime="20211127 15:02:13.081"/>
+<status status="PASS" starttime="20211127 15:31:46.026" endtime="20211127 15:31:46.026"/>
 </kw>
-<status status="PASS" starttime="20211127 15:02:11.997" endtime="20211127 15:02:13.081"/>
+<status status="PASS" starttime="20211127 15:31:44.899" endtime="20211127 15:31:46.027"/>
 </iter>
-<status status="PASS" starttime="20211127 15:02:07.634" endtime="20211127 15:02:13.081"/>
+<status status="PASS" starttime="20211127 15:31:40.335" endtime="20211127 15:31:46.027"/>
 </for>
-<status status="PASS" starttime="20211127 15:01:54.258" endtime="20211127 15:02:13.082"/>
+<status status="PASS" starttime="20211127 15:31:26.668" endtime="20211127 15:31:46.027"/>
 </kw>
 <kw name="Fechar navegador" library="base" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211127 15:02:13.727" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211127 15:02:13.084" endtime="20211127 15:02:13.727"/>
+<msg timestamp="20211127 15:31:46.863" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 15:31:46.029" endtime="20211127 15:31:46.863"/>
 </kw>
-<kw name="Stop Video Recording" library="ScreenCapLibrary">
-<doc>Stops the video recording corresponding to the given ``alias`` and generates the file in WebM format. If no
-``alias`` is specified, the last opened recording will be closed. If there are more recordings with the same
-alias all of them will be closed. If ``embed`` argument was set to
-``True`` the video will be displayed in the log file.</doc>
-<msg timestamp="20211127 15:02:13.763" level="INFO" html="true">&lt;a href="recording_5.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_5.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211127 15:02:13.727" endtime="20211127 15:02:13.764"/>
+<kw name="Stop Gif Recording" library="ScreenCapLibrary">
+<doc>Stops the GIF recording and generates the file. If ``embed`` argument was set to ``True`` the
+GIF will be displayed in the log file.</doc>
+<msg timestamp="20211127 15:31:46.916" level="INFO" html="true">&lt;a href="screenshot_5.gif"&gt;&lt;img src="screenshot_5.gif" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211127 15:31:46.864" endtime="20211127 15:31:49.996"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211127 15:02:13.764" endtime="20211127 15:02:19.014"/>
+<status status="PASS" starttime="20211127 15:31:49.996" endtime="20211127 15:31:55.088"/>
 </kw>
-<status status="PASS" starttime="20211127 15:02:13.083" endtime="20211127 15:02:19.014"/>
+<status status="PASS" starttime="20211127 15:31:46.028" endtime="20211127 15:31:55.089"/>
 </kw>
 <tag>test5</tag>
-<status status="PASS" starttime="20211127 15:01:23.670" endtime="20211127 15:02:19.015"/>
+<status status="PASS" starttime="20211127 15:30:55.190" endtime="20211127 15:31:55.090"/>
 </test>
-<status status="PASS" starttime="20211127 15:01:22.760" endtime="20211127 15:02:19.018"/>
+<status status="PASS" starttime="20211127 15:30:53.436" endtime="20211127 15:31:55.098"/>
 </suite>
-<status status="PASS" starttime="20211127 15:01:22.697" endtime="20211127 15:02:19.023"/>
+<status status="PASS" starttime="20211127 15:30:53.306" endtime="20211127 15:31:55.106"/>
 </suite>
 <statistics>
 <total>

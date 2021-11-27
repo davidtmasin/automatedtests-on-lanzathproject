@@ -5,7 +5,9 @@
 ### Testes realizados:
 
 - Testar se a página inicial está acessível
+
 - Testar a criação de uma tarefa
+  [![Watch the video](./logs/test1.gif)](./logs/test1.gif)
 - Testar a criação de uma tarefa sem informar o nome da tarefa
 - Testar a criação de uma tarefa e depois excluí-la
 - Testar a criação de várias tarefas e depois excluí-las
