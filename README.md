@@ -20,26 +20,26 @@
 
 ### Informações adicionais
 
-- Biblioteca ScreenCapLibrary que possibilita gravar os testes foi instalada
+1. Biblioteca ScreenCapLibrary que possibilita gravar os testes foi instalada
 
-  - `pip install --upgrade robotframework-screencaplibrary`
+- `pip install --upgrade robotframework-screencaplibrary`
 
-- Importada a biblioteca ScreenCapLibrary no arquivo **base.robot**
+2. Importada a biblioteca ScreenCapLibrary no arquivo **base.robot**
 
-  - `Library ScreenCapLibrary`
+- `Library ScreenCapLibrary`
 
-- Adicionar a Keyword que inicia a gravação no Setup (**gravação em vídeo**)
+3. Adicionar a Keyword que inicia a gravação no Setup (**gravação em vídeo .webm**)
 
-  - `Start Video Recording`
+- `Start Video Recording`
 
-- Adicionar a Keyword que encerra a gravação no Teardown
+4. Adicionar a Keyword que encerra a gravação no Teardown
 
-  - `Stop Video Recording`
+- `Stop Video Recording`
 
-- Adicionar a Keyword que inicia a gravação no Setup (**gravação em gif**)
+5. Adicionar a Keyword que inicia a gravação no Setup (**gravação em .gif**)
 
-  - `Start Gif Recording`
+- `Start Gif Recording`
 
-- Adicionar a Keyword que encerra a gravação no Teardown
+6. Adicionar a Keyword que encerra a gravação no Teardown
 
-  - `Stop Gif Recording`
+- `Stop Gif Recording`
